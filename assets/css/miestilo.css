@@ -1,0 +1,45 @@
+/**p{
+    font-family: cursive;
+    text-align: justify;
+    color: rgb(0, 26, 255);
+    font-size: 24 px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+body {
+    background-color: rgb(184, 230, 173);
+}
+h1{
+    color: rgb(48, 23, 23);
+    font-weight: bold;
+    text-align: center;
+
+}**/
+
+body{
+    margin: 1; 
+    padding: 1;
+
+}
+
+.titulo{
+    background-color: #92a8d1;
+    margin: 20px;
+}
+
+.parrafo{
+    background-color: green;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom: 60px;
+    padding-right: 300px;
+}
+
+footer{
+    background-color: goldenrod;
+    padding: 10px 20px 30px 40px ;
+}
+
+
+
