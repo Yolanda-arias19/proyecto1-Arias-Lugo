@@ -64,6 +64,22 @@
       </div>
     </div>
   </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets\img\" class="card-img-top" alt="alfajores">
+      <div class="card-body">
+        <h5 class="card-title">Alfajores</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets\img\" class="card-img-top" alt="galletitas">
+      <div class="card-body">
+        <h5 class="card-title">Galletitas</h5>
+      </div>
+    </div>
+  </div>
 </div>
 
 
