@@ -4,7 +4,7 @@
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
     <a class="navbar-brand" href="<?php echo base_url('/');?>">
-      <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="assets\img\logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
     </a>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
@@ -20,7 +20,7 @@
               <a class="nav-link mx-lg-2" href="<?php echo base_url('comercializacion');?>">Contactos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="<?php echo base_url('inf_contactos');?>">Comercialización</a>
+              <a class="nav-link mx-lg-2" href="<?php echo base_url('contacto');?>">Comercialización</a>
             </li>
           </ul>
         </div>
