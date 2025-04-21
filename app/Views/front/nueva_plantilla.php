@@ -7,10 +7,10 @@
       <img src="assets\img\primera.jpeg" class="d-block w-100"  alt="tortas">
     </div>
     <div class="carousel-item">
-      <img src="assets\img\galletita.jpeg" class="d-block w-100"  alt="mesa de dulces">
+      <img src="assets\img\galletita.jpeg" class="d-block w-100"  alt="galletitas">
     </div>
     <div class="carousel-item">
-      <img src="assets\img\DONAS.jpg" class="d-block w-100"  alt="tartas">
+      <img src="assets\img\DONAS.jpg" class="d-block w-100"  alt="donas">
     </div>
   </div>
   </div>
