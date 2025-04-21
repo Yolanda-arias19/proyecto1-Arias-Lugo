@@ -1,4 +1,4 @@
-<div style="margin-top: 10px; font-size: 0.9em; color: #888;">
+
 <body>
     <section class ="carrusel">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
