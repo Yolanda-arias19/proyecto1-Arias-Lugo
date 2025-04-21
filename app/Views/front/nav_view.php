@@ -17,10 +17,10 @@
               <a class="nav-link mx-lg-2" href="<?php echo base_url('quienes_somos');?>">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="<?php echo base_url('comercializacion');?>">Contactos</a>
+              <a class="nav-link mx-lg-2" href="<?php echo base_url('contacto');?>">Contactos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="<?php echo base_url('contacto');?>">Comercialización</a>
+              <a class="nav-link mx-lg-2" href="<?php echo base_url('comercializacion');?>">Comercialización</a>
             </li>
           </ul>
         </div>
