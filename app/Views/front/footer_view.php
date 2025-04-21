@@ -11,7 +11,7 @@
          <a href="<?php echo base_url('comercializacion');?>">Comercializacion</a>
          <a href="<?php echo base_url('contacto');?>">Contacto</a>
          <a href="<?php echo base_url('quienes_somos');?>">Quienes Somos</a>
-         <a href="<?php echo base_url('terminoyuso');?>">Termino y uso</a>
+         <a href="<?php echo base_url('terminosYusos');?>">Termino y uso</a>
 
 </div>
 

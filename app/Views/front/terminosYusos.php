@@ -1,4 +1,4 @@
-<h1>Términos y Condiciones de Uso</h1>
+|   <h1>Términos y Condiciones de Uso</h1>
     <p>Última actualización: 14/04/2025</p>
 
     <h2>1. Aceptación de los términos</h2>
