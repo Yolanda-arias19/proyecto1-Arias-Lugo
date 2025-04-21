@@ -1,6 +1,6 @@
 <section class="contacto">
 
-  <h2>contactos</h2>
+  <h1>contactos</h1>
   <p>¿Querés hacer un pedido o tenés alguna consulta? Escribinos, 
     ¡Estamos para lo que necesites!</p>
 
@@ -15,4 +15,5 @@
   <textarea placeholder="Escribí tu mensaje..." required></textarea>
   <button type="submit">Enviar mensaje</button>
 </form>
-</section></p>
+</section>
+

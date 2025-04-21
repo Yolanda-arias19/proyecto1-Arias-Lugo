@@ -1,4 +1,6 @@
 <section class="Comercialización">
+
+   <h1>Comercializacion</h1>
 <p>Ofrecemos varias opciones para que recibas tus productos como más te convenga:</p>
 
 <h2>Entrega en tienda programada:</h2>
@@ -34,3 +36,4 @@
     listos para regalar o presentar.</li>
 </ul>
 
+</section>
