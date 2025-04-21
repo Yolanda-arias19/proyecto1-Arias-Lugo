@@ -74,9 +74,9 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="assets\img\" class="card-img-top" alt="galletitas">
+      <img src="assets\img\" class="card-img-top" alt="cupcakes">
       <div class="card-body">
-        <h5 class="card-title">Galletitas</h5>
+        <h5 class="card-title">Cupcakes</h5>
       </div>
     </div>
   </div>
