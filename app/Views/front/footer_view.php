@@ -1,8 +1,8 @@
 </head>
     <footer class="footer">
-        <div class="container-fluit">
+        <div class="container-fluid">
 
-<footer style="background-color:rgb(244, 227, 220); padding: 40px 20px; text-align: center; font-family: sans-serif;">
+<footer>
   <div>
     <h2>Virginia & Valentina · Pastelería Artesanal</h2>
     <p>Hecho con amor y sabor desde nuestra cocina hasta tu mesa.</p> 
