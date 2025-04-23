@@ -22,6 +22,11 @@ body{
     position: relative;
 }
 
+.carousel{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+
 .footer{
     margin: 15px;
     background-color:#f7f2ec;
@@ -43,6 +48,13 @@ h1{
 
 p{
     font-size: 26px;
+
+}
+
+.stide img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
 }
 
 h2{
