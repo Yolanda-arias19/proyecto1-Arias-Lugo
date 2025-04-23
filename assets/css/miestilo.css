@@ -21,5 +21,16 @@ body{
     position: relative;
 }
 
+.carousel{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
 
+.stide img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+
+}
 
