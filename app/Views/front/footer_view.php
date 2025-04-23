@@ -1,6 +1,6 @@
 </head>
     <footer class="footer">
-        <div class="container-fluit">
+        <div class="container-fluid">
 
 <footer style="background-color:rgb(244, 227, 220); padding: 40px 20px; text-align: center; font-family: sans-serif;">
   <div>
