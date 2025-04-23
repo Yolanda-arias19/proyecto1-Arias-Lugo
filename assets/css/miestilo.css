@@ -1,5 +1,6 @@
 body{
     background-color: #efd1d8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -30,11 +31,37 @@ body{
 }
 
 .introduccion{
-    margin: 15px;
+    margin: 30px;
 }
 
 h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
+p{
+    font-size: 26px;
+}
 
+h2{
+    font-size:40px;
+}
+.categoria{
+    margin:15px;
+}
+
+.card-body{
+    background-color:#f7f2ec;
+
+}
+
+.row{
+    margin:10px;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+}
