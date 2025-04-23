@@ -21,10 +21,27 @@ body{
     position: relative;
 }
 
+<<<<<<< HEAD
 .carousel{
     width: 300px;
     position: relative;
     overflow: hidden;
+=======
+.footer{
+    margin: 15px;
+    background-color:#f7f2ec;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.introduccion{
+    margin: 15px;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+>>>>>>> 21007013f3946b4801b004fbb25786ca0a9bdd01
 }
 
 .stide img{

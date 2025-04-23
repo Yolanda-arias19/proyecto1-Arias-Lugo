@@ -15,12 +15,16 @@
     </div>
   </div>
   </div>
+<<<<<<< HEAD
    </div>
    </div>
    </section>
+=======
+  </section>
+>>>>>>> 21007013f3946b4801b004fbb25786ca0a9bdd01
 
 <section class ="introduccion">
-    <h1> valen & vir </h1>
+    <h1> Valen & Vir </h1>
     <h5> Creamos postres únicos, hechos a mano con ingredientes de calidad y mucho amor. 
       En cada receta combinamos tradición y creatividad para ofrecerte experiencias 
       dulces que sorprenden. 
@@ -83,6 +87,6 @@
     </div>
   </div>
 </div>
-
+</section>
 
 </html>

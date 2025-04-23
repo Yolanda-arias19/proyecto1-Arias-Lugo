@@ -10,6 +10,4 @@
     <link href="assets/css/miestilo.css" type= "text/css" rel="stylesheet">
     <script src = "assets/js/bootstrap.bundle.min.js" ></script>
 
-<!--mi hoja de estilo-->
-  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/...../6.4.0/css/all.min.css"-->
 </head>
