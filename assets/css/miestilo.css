@@ -15,12 +15,13 @@ body{
     box-shadow: none;
     outline:none;
 }
-
+/*
 .nav-link{
     color: #666777;
     font-weight: 500;
     position: relative;
 }
+*/
 
 .carousel{
     width: 100%; /*ancho*/
