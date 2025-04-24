@@ -1,7 +1,6 @@
 
 <body>
     <section class ="carousel">
-      <div class="d-flexjustify-content-center">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -15,7 +14,9 @@
     </div>
   </div>
   </div>
+   </section>  
 </section>
+
 
 <section class ="introduccion">
     <h1> Valen & Vir </h1>
