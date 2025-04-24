@@ -1,5 +1,5 @@
 body{
-    background-color: #efd1d8;
+    background-color: #f1dbe2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -29,7 +29,7 @@ body{
 }
 
 .footer{
-    margin: 15px;
+    margin-top: 30px;
     background-color:#f7f2ec;
     padding: 40px 20px;
     text-align: center;
@@ -37,17 +37,18 @@ body{
 }
 
 .introduccion{
-    margin: 30px;
+    margin-top: 40px;
 }
 
-h1{
+.introduccion h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-size: 60px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-p{
+.introduccion p{
     font-size: 26px;
     line-height: 1;
 }
@@ -58,13 +59,13 @@ p{
     object-fit: cover;
 }
 
-h2{
+.categoria h2{
     font-size:40px;
     font-weight: bold;
 }
 
 .categoria{
-    margin:15px;
+    margin:45px 10px 0 10px;
 }
 
 .card-body{
@@ -83,8 +84,26 @@ h2{
 
 .footer a{
     text-decoration: none;
+    color:#ee819a;
+    
 }
 
 .col img{
-    height: 3490px;
+    height: 350px;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid;
+}
+
+.ventanas a{
+    margin-right: 28px;
+}
+
+.ventanas{
+    margin-bottom: 13px;
+}
+
+.footer p{
+    font-size: 18px;
 }
