@@ -15,13 +15,7 @@
     </div>
   </div>
   </div>
-<<<<<<< HEAD
-   </div>
-   </div>
-   </section>
-=======
-  </section>
->>>>>>> 21007013f3946b4801b004fbb25786ca0a9bdd01
+</section>
 
 <section class ="introduccion">
     <h1> Valen & Vir </h1>

@@ -26,6 +26,7 @@ body{
     width: 300px;
     position: relative;
     overflow: hidden;
+}
 
 .footer{
     margin: 15px;
@@ -48,18 +49,20 @@ h1{
 
 p{
     font-size: 26px;
-
+    line-height: 1;
 }
 
 .stide img{
-    width: 10%;
-    height: 10%;
+    width: 30%;
+    height: 30%;
     object-fit: cover;
 }
 
 h2{
     font-size:40px;
+    font-weight: bold;
 }
+
 .categoria{
     margin:15px;
 }
@@ -76,4 +79,12 @@ h2{
 .card-title{
     text-align: center;
     font-size: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.col img{
+    height: 3490px;
 }
