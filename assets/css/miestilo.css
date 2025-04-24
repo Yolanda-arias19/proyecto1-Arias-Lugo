@@ -1,5 +1,6 @@
 body{
-    background-color: #efd1d8;
+    background-color: #f1dbe2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -23,9 +24,9 @@ body{
 
 .carousel{
     width: 100%; /*ancho*/
-    height: 500px; /*alto*/
+    height: 400px; /*alto*/
     position: relative;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     overflow: hidden;
     border-radius: 15px;
@@ -51,8 +52,8 @@ body{
 
 
 .slide img{
-    width: 30%;
-    height: 30%;
+    width: 70%;
+    height: 0%;
     object-fit: contain;
     display: block;
     object-position: center;
@@ -73,7 +74,7 @@ body{
 }
 
 .footer{
-    margin: 15px;
+    margin-top: 30px;
     background-color:#f7f2ec;
     padding: 40px 20px;
     text-align: center;
@@ -81,11 +82,69 @@ body{
 }
 
 .introduccion{
-    margin: 15px;
+    margin-top: 40px;
 }
 
-h1{
+.introduccion h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.introduccion p{
+    font-size: 26px;
+    line-height: 1;
+}
 
+.stide img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.categoria h2{
+    font-size:40px;
+    font-weight: bold;
+}
+
+.categoria{
+    margin:45px 10px 0 10px;
+}
+
+.card-body{
+    background-color:#f7f2ec;
+
+}
+
+.row{
+    margin:10px;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#ee819a;
+    
+}
+
+.col img{
+    height: 350px;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid;
+}
+
+.ventanas a{
+    margin-right: 28px;
+}
+
+.ventanas{
+    margin-bottom: 13px;
+}
+
+.footer p{
+    font-size: 18px;
+}

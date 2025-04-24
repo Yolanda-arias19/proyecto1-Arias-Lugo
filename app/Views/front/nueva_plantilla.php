@@ -15,6 +15,8 @@
   </div>
   </div>
    </section>  
+</section>
+
 
 <section class ="introduccion">
     <h1> Valen & Vir </h1>
