@@ -1,6 +1,7 @@
 
 <body>
     <section class ="carousel">
+    <div class="slide">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -14,7 +15,7 @@
     </div>
   </div>
   </div>
-   </section>  
+</div>
 </section>
 
 

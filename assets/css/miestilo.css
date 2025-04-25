@@ -24,11 +24,12 @@ body{
 */
 
 .carousel{
-    width: 100%; /*ancho*/
-    height: 400px; /*alto*/
+    width: 900px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 50px;
     position: relative;
-    max-width: 1100px;
-    margin: auto;
+    max-width: 2000px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(10, 2, 2, 0.1);
@@ -36,7 +37,7 @@ body{
 
 .slides{
     display: flex;
-    width: 300%;
+    width: 400%;
     height: 100%;
     animation: deslizar 3s infinite;
 }
@@ -53,12 +54,12 @@ body{
 
 
 .slide img{
-    width: 70%;
-    height: 0%;
+    width: auto
+    height: 8%;
     object-fit: contain;
     display: block;
     object-position: center;
-
+    margin: 0 auto;
 }
 
 @keyframes deslizar{
