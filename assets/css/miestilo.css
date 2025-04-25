@@ -104,8 +104,8 @@ body{
 }
 
 .comercializacion{
-    margin: 40px ;
     padding-left:  30px;
+    padding-right: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -177,7 +177,7 @@ body{
 
 .footer a{
     text-decoration: none;
-    color:#ee819a;
+    color:#f34b72;
     
 }
 
