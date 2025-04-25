@@ -23,7 +23,7 @@
             <a class="nav-link mx-lg-2" href="<?php echo base_url('contacto');?>">Contactos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="<?php echo base_url('comercializacion');?>">Comercializacion</a>
+            <a class="nav-link mx-lg-2" href="<?php echo base_url('comercializacion');?>">Comercialización</a>
           </li>
         </ul>
       </div>
