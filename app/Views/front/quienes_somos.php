@@ -13,8 +13,8 @@
      y mucha harina en el aire. 
      Lo que empezó como un hobby se convirtió en nuestro proyecto de vida.
      Decidimos emprender juntas para compartir con otros lo que más disfrutamos hacer:
-     postres con alma y sabor casero.</p>
-  <p>Con el tiempo fuimos creciendo, aprendiendo y mejorando.
+     postres con alma y sabor casero.
+     Con el tiempo fuimos creciendo, aprendiendo y mejorando.
      Hoy seguimos horneando como el primer día, 
      manteniendo la esencia de lo hecho a mano y sumando nuevas ideas
      para sorprender a cada cliente.</p>

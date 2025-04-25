@@ -4,13 +4,13 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active c-item">
-      <img src="assets\img\primera.jpeg" class="d-block w-100 c-img"  alt="tortas">
+      <img src="assets\img\primera.jpeg" class="d-block w-100 rounded c-img"  alt="tortas">
     </div>
     <div class="carousel-item c-item">
-      <img src="assets\img\galletita.jpeg" class="d-block w-100 c-img"  alt="galletitas">
+      <img src="assets\img\galletita.jpeg" class="d-block w-100 rounded c-img"  alt="galletitas">
     </div>
     <div class="carousel-item c-item">
-      <img src="assets\img\DONAS.jpg" class="d-block w-100 c-img"  alt="donas">
+      <img src="assets\img\DONAS.jpg" class="d-block w-100 rounded c-img"  alt="donas">
     </div>
   </div>
   </div>
@@ -19,13 +19,13 @@
 
 <section class ="introduccion">
     <h1> Valen & Vir </h1>
-    <h5> Creamos postres únicos, hechos a mano con ingredientes de calidad y mucho amor. 
+    <p> Creamos postres únicos, hechos a mano con ingredientes de calidad y mucho amor. 
       En cada receta combinamos tradición y creatividad para ofrecerte experiencias 
       dulces que sorprenden. 
       Nada industrial, todo fresco, real y lleno de sabor.
       Hacemos pedidos personalizados para que celebres a tu manera: 
       cumpleaños, eventos o antojos únicos. Lo artesanal también puede ser moderno,
-      delicioso y con onda.</h5>  
+      delicioso y con onda.</p>  
 </section>
 
 
