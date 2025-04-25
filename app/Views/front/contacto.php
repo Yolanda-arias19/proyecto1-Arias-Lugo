@@ -8,12 +8,5 @@
   <p>Email:virginbelen@gmail.com</p>
   <p>Dirección:Perugorria 1157, entre calle San Juan y Mendoza</p>
 
-
-<form class="formulario-contacto">
-  <input type="text" placeholder="Tu nombre" required>
-  <input type="email" placeholder="Tu email" required>
-  <textarea placeholder="Escribí tu mensaje..." required></textarea>
-  <button type="submit">Enviar mensaje</button>
-</form>
 </section>
 

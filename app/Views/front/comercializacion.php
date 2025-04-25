@@ -1,4 +1,4 @@
-<section class="Comercialización">
+<section class="comercializacion">
 
    <h1>Comercializacion</h1>
 <p>Ofrecemos varias opciones para que recibas tus productos como más te convenga:</p>

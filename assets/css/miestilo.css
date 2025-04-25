@@ -103,10 +103,42 @@ body{
     font-weight: bold;
 }
 
-.categoria h2{
-    font-size:40px;
-    font-weight: bold;
+.comercializacion{
+    max-width: 800px;
+    margin-top: 30px;
+    margin: 40px ;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #0b0303;
 }
+
+.comercializacion h1{
+    margin-top: 50px;
+    font-size: 45px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold
+  } 
+  
+.comercializacion h2{
+    margin-bottom: 10px;
+    margin-top: 16px;
+    color: #ee819a;
+    position: relative;
+}
+.comercializacion p{
+    font-size: 22px;
+    margin-bottom: 28px;
+    color: #000
+    position: relative;
+}
+
+.comercializacion ul{
+    
+}
+
 
 .categoria{
     margin:45px 10px 0 10px;
