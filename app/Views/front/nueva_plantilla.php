@@ -19,13 +19,13 @@
 
 <section class ="introduccion">
     <h1> Valen & Vir </h1>
-    <h5> Creamos postres únicos, hechos a mano con ingredientes de calidad y mucho amor. 
+    <p> Creamos postres únicos, hechos a mano con ingredientes de calidad y mucho amor. 
       En cada receta combinamos tradición y creatividad para ofrecerte experiencias 
       dulces que sorprenden. 
       Nada industrial, todo fresco, real y lleno de sabor.
       Hacemos pedidos personalizados para que celebres a tu manera: 
       cumpleaños, eventos o antojos únicos. Lo artesanal también puede ser moderno,
-      delicioso y con onda.</h5>  
+      delicioso y con onda.</p>  
 </section>
 
 
