@@ -59,7 +59,18 @@ body{
     border-radius: 50%;
 }
 
+.c-item{
+    margin-top: 120px;
+    height: 400px;
+}
+
+.c-img{
+    height: 650px;
+    object-fit: cover;
+}
+
 .carousel{
+<<<<<<< HEAD
     width: 900px;
     height: 400px;
     margin-top: 100px;
@@ -98,6 +109,11 @@ body{
     margin: 0 auto;
 }
 
+=======
+    max-width: 1300px;
+    margin: 20px;
+}
+>>>>>>> 14ff9957f7d3434e6d21144d4f0bb7d586f729d9
 
 .footer{
     margin-top: 30px;
@@ -159,6 +175,7 @@ body{
 
 .col img{
     height: 350px;
+    object-fit: cover;
 }
 
 .footer a:hover{
