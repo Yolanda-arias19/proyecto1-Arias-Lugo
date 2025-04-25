@@ -8,7 +8,7 @@
     <p>Hecho con amor y sabor desde nuestra cocina hasta tu mesa.</p> 
 
         
-        <a href="<?php echo base_url('comercializacion');?>">Comercializacion</a>
+        <a href="<?php echo base_url('comercializacion');?>">Comercialización</a>
         <a href="<?php echo base_url('contacto');?>">Contactos</a>
         <a href="<?php echo base_url('quienes_somos');?>">Quienes Somos</a>
         <a href="<?php echo base_url('terminosYusos');?>">Términos y usos</a>

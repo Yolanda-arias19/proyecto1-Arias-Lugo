@@ -23,7 +23,7 @@ body{
 }
 
 .nav-link{
-    color: #ee819a;
+    color: #f34b72;
     font-weight: 500;
     position: relative;
 }
@@ -43,7 +43,7 @@ body{
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #ee819a;
+    background-color: #f34b72;
     visibility: hidden;
     transition: 0.3s ease-in-out;
 }
@@ -100,11 +100,12 @@ body{
     margin-top: 10px;
     margin-bottom: 16px;
     font-size: 22px;
+    text-align: justify;
 }
 
 .comercializacion{
-    margin: 40px ;
     padding-left:  30px;
+    padding-right: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -125,7 +126,7 @@ body{
 .comercializacion p{
     font-size: 22px;
     margin-bottom: 28px;
-    text-align: left;
+    text-align: justify;
 }
 
 .comercializacion ul{
@@ -136,7 +137,7 @@ body{
 .contacto p{
     font-size: 22px;
     margin-bottom: 28px;
-    text-align: left;
+    text-align: justify;
 }
 
 .contacto h1{
@@ -156,6 +157,10 @@ body{
     margin:45px 10px 0 10px;
 }
 
+.categoria h2{
+   font-weight: bold;
+}
+
 .card-body{
     background-color:#f7f2ec;
 
@@ -172,7 +177,7 @@ body{
 
 .footer a{
     text-decoration: none;
-    color:#ee819a;
+    color:#f34b72;
     
 }
 
@@ -215,14 +220,14 @@ body{
 .terminos-usos h2{
     margin-top: 16px;
     margin-bottom: 10px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #ee819a;
 }
 
 .terminos-usos p{
     margin-bottom: 28px;
     font-size: 22px;
-    text-align:left ;
+    text-align: justify;
 }
 
 .terminos-usos li{
@@ -252,5 +257,5 @@ body{
 .sobre-nosotras p{
     margin-bottom: 28px;
     font-size: 22px;
-    text-align: left;
+    text-align: justify;
 }
