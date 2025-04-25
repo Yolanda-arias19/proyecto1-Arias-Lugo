@@ -1,20 +1,19 @@
 
 <body>
     <section class ="carousel">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets\img\primera.jpeg" class="d-block w-100"  alt="tortas">
+    <div class="carousel-item active c-item">
+      <img src="assets\img\primera.jpeg" class="d-block w-100 c-img"  alt="tortas">
     </div>
-    <div class="carousel-item">
-      <img src="assets\img\galletita.jpeg" class="d-block w-100"  alt="galletitas">
+    <div class="carousel-item c-item">
+      <img src="assets\img\galletita.jpeg" class="d-block w-100 c-img"  alt="galletitas">
     </div>
-    <div class="carousel-item">
-      <img src="assets\img\DONAS.jpg" class="d-block w-100"  alt="donas">
+    <div class="carousel-item c-item">
+      <img src="assets\img\DONAS.jpg" class="d-block w-100 c-img"  alt="donas">
     </div>
   </div>
   </div>
-   </section>  
 </section>
 
 

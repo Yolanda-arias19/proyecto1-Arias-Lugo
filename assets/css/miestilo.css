@@ -59,55 +59,19 @@ body{
     border-radius: 50%;
 }
 
+.c-item{
+    margin-top: 120px;
+    height: 400px;
+}
+
+.c-img{
+    height: 650px;
+    object-fit: cover;
+}
+
 .carousel{
-    width: 100%; /*ancho*/
-    height: 400px; /*alto*/
-    position: relative;
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(10, 2, 2, 0.1);
-}
-
-.slides{
-    display: flex;
-    width: 300%;
-    height: 100%;
-    animation: deslizar 3s infinite;
-}
-
-.slide{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-
-.slide img{
-    width: 70%;
-    height: 0%;
-    object-fit: contain;
-    display: block;
-    object-position: center;
-
-}
-
-@keyframes deslizar{
-    0% {transform: translateX(0); }
-    30% {transform: translateX(0); }
-
-    33% {transform: translateX(-100%); }
-    63% {transform: translateX(-100%); }
-
-    66% {transform: translateX(-200%); }
-    96% {transform: translateX(-200%); }
-
-    100% {transform: translateX(0); }
+    max-width: 1300px;
+    margin: 20px;
 }
 
 .footer{
@@ -137,12 +101,6 @@ body{
     font-size: 26px;
     line-height: 1;
     font-weight: bold;
-}
-
-.stide img{
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
 }
 
 .categoria h2{
@@ -176,6 +134,7 @@ body{
 
 .col img{
     height: 350px;
+    object-fit: cover;
 }
 
 .footer a:hover{
