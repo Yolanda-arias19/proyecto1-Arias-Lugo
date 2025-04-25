@@ -1,6 +1,6 @@
 <section class="comercializacion">
 
-   <h1>Comercializacion</h1>
+   <h1>Comercialización</h1>
 <p>Ofrecemos varias opciones para que recibas tus productos como más te convenga:</p>
 
 <h2>Entrega en tienda programada:</h2>

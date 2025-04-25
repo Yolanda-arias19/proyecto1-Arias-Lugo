@@ -1,6 +1,6 @@
 <section class="contacto">
 
-  <h1>contactos</h1>
+  <h1>Contactos</h1>
   <p>¿Querés hacer un pedido o tenés alguna consulta? Escribinos, 
     ¡Estamos para lo que necesites!</p>
 
