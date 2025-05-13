@@ -80,6 +80,30 @@
       </div>
     </div>
   </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets/img/galletita.jpeg" class="card-img-top" alt="galletitas">
+      <div class="card-body">
+        <h5 class="card-title">Galletas</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets/img/DONAS.jpg" class="card-img-top" alt="donas">
+      <div class="card-body">
+        <h5 class="card-title">Donas</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets/img/cupcakes.jpeg" class="card-img-top" alt="cupcakes">
+      <div class="card-body">
+        <h5 class="card-title">...</h5>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 

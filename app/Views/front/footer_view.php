@@ -12,6 +12,7 @@
         <a href="<?php echo base_url('contacto');?>">Contactos</a>
         <a href="<?php echo base_url('quienes_somos');?>">Quienes Somos</a>
         <a href="<?php echo base_url('terminosYusos');?>">Términos y usos</a>
+        <a href="<?php echo base_url('consultas');?>">Consultas</a>
 
 </div>
 
@@ -44,5 +45,8 @@
  </div>
  </div>
 </footer>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
