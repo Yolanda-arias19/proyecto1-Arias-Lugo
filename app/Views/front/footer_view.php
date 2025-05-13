@@ -24,13 +24,13 @@
     <img src="assets/img/ig.jpg" style="width:32px; height:32px;">
      </a>
 
-   <!---wapp-->
+   <!---whatsapp-->
    <a href="https://wa.me/5493795357846?text=Hola%20quiero%20hacer%20un%20pedido"
    class="text-white mx-3"
    target="_blank" style="margin: 0 10px;">
     <img src="assets/img/wp (1).jpg" style="width:32px; height:32px;">
   </a>
-   <!---mail--> 
+   <!---email--> 
 
    <a href="mailto:virginbelen@gmail.com?subject=Consulta%20&body=Hola%2C%20quisiera%20hacer%20un%20pedido."
    class="text-white mx-3"

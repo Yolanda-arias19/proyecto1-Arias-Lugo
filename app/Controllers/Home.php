@@ -16,7 +16,7 @@ class Home extends BaseController
 
     public function quienes_somos()
     {
-     $data ['titulo'] ='quienes somos';
+     $data ['titulo'] ='Quienes somos';
      echo view ('front/head_view', $data);
      echo view ('front/nav_view');
      echo view ('front/quienes_somos');
@@ -25,7 +25,7 @@ class Home extends BaseController
 
     public function comercializacion()
     {
-        $data['titulo']= 'Comercializacion';
+        $data['titulo']= 'Comercialización';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
         echo view('front/comercializacion');
@@ -35,7 +35,7 @@ class Home extends BaseController
 
     public function contacto()
     {
-        $data['titulo']= 'Informacion de contactos';
+        $data['titulo']= 'Información de contactos';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
         echo view('front/contacto');
@@ -45,7 +45,7 @@ class Home extends BaseController
     
     public function terminosYusos()
     {
-        $data['titulo']= 'Terminos y Usos';
+        $data['titulo']= 'Términos y Usos';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
         echo view('front/terminosYusos');
@@ -55,7 +55,7 @@ class Home extends BaseController
 
     public function catalago_produc()
     {
-        $data['titulo']= 'Catalgo de productos';
+        $data['titulo']= 'Catálogo de productos';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
         echo view('front/catalago_produc');
