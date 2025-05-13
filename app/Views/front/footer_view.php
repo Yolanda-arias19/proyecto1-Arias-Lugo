@@ -46,7 +46,7 @@
  </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

@@ -47,7 +47,7 @@
         </ul>
       </div>
     </div>
-    <button class="login-button">Iniciar sesión</button>
+    <button class="btnLogin-popup">Iniciar sesión</button>
   </div>
 </nav>
 
