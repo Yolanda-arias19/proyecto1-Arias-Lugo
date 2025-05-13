@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => '',
-        'database'     => '', /**Aca tiene que estar el nombre de la base de datos */
+        'database'     => 'BD_arias_lugo', /**Aca tiene que estar el nombre de la base de datos */
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
