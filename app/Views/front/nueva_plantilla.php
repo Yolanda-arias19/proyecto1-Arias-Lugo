@@ -42,17 +42,41 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="assets\img\chocotorta.jpeg" class="card-img-top" alt="postres">
+      <img src="assets\img\mediana.jpg" class="card-img-top" alt="postres">
       <div class="card-body">
-        <h5 class="card-title">Postres</h5>
+        <h5 class="card-title">Tortas Medianas</h5>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="assets/img/superpoderosas.jpeg" class="card-img-top" alt="super poderosas">
+      <img src="assets\img\kg.jpg" class="card-img-top" alt="super poderosas">
       <div class="card-body">
-        <h5 class="card-title">Tortas Infantiles</h5>
+        <h5 class="card-title">Tortas de Kilos</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets\img\mini.jpg" class="card-img-top" alt="postres">
+      <div class="card-body">
+        <h5 class="card-title">Mini tortas</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src= "assets\img\Hamburguesa.jpg" class="card-img-top" alt="super poderosas">
+      <div class="card-body">
+        <h5 class="card-title">Tortas tamaño hamburguesa</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="assets\img\chocotorta.jpeg" class="card-img-top" alt="postres">
+      <div class="card-body">
+        <h5 class="card-title">Postres</h5>
       </div>
     </div>
   </div>
@@ -66,7 +90,7 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="assets/img/alfajor.jpeg" class="card-img-top" alt="alfajores">
+      <img src= "assets\img\alfajorMaicena.jpg" class="card-img-top" alt="alfajores">
       <div class="card-body">
         <h5 class="card-title">Alfajores</h5>
       </div>
@@ -98,9 +122,9 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="assets/img/cupcakes.jpeg" class="card-img-top" alt="cupcakes">
+      <img src= "assets\img\paletaM.jpg" class="card-img-top" alt="cupcakes">
       <div class="card-body">
-        <h5 class="card-title">...</h5>
+        <h5 class="card-title">Mesas de dulces</h5>
       </div>
     </div>
   </div>
