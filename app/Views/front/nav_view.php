@@ -47,66 +47,79 @@
         </ul>
       </div>
     </div>
-    <button class="btnLogin-popup">Iniciar sesión</button>
+
+    <!-- <button class="btnLogin-popup">Iniciar sesión</button> original-->
+      <button type="button" class="btnLogin-popup" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Iniciar sesión
+    </button>
+  
   </div>
 </nav>
 
 </header>
 
-<div class="wrapper">
-    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-    
-    <div class="form-box login">
-      <h2>Iniciar sesión</h2>
-      <form action="#">
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+        <!-- Botón de Cierre -->
+        <span class="icon-close" data-bs-dismiss="modal" aria-label="Close">&times;</span>
+        
+      <div class="modal-body">
+        <!-- Formulario Login -->
+        <div class="form-box login active">
+          <h2>Iniciar sesión</h2>
+          <form>
             <div class="input-box">
               <span class="icon"><ion-icon name="mail"></ion-icon></span>
               <input type="email" required>
               <label>Email</label>
             </div>
-
             <div class="input-box">
               <span class="icon"><ion-icon name="lock"></ion-icon></span>
               <input type="password" required>
               <label>Contraseña</label>
             </div>
-            <button type="submit" class="btn">Iniciar sesión</button>
+            <button type="submit" class="btn-custom">Ingresar</button>
             <div class="login-register">
               <p>¿No tienes una cuenta? <a href="#" class="register-link">Regístrate</a></p>
             </div>
-      </form>
-    </div>
+          </form>
+        </div>
 
-    <div class="form-box register">
-      <h2>Registro</h2>
-      <form action="#">
+        <!-- Formulario Registro -->
+        <div class="form-box register">
+          <h2>Registro</h2>
+          <form>
             <div class="input-box">
               <span class="icon"><ion-icon name="person"></ion-icon></span>
               <input type="text" required>
               <label>Nombre de usuario</label>
             </div>
-
             <div class="input-box">
               <span class="icon"><ion-icon name="mail"></ion-icon></span>
               <input type="email" required>
               <label>Email</label>
             </div>
-
             <div class="input-box">
               <span class="icon"><ion-icon name="lock"></ion-icon></span>
               <input type="password" required>
               <label>Contraseña</label>
             </div>
-            
-            <div class="remember-forgot">
-              <label><input type="checkbox"> Estoy de acuerdo con los términos y condiciones</label>
-
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="terms">
+              <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
             </div>
-
-            <button type="submit" class="btn">Registrarse</button>
+            <button type="submit" class="btn-custom">Registrarse</button>
             <div class="login-register">
               <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar sesión</a></p>
             </div>
-      </form>
+          </form>
+        </div>
+
+      </div>
     </div>
+  </div>
 </div>
+
