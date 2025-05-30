@@ -10,13 +10,7 @@
     <div class="card-header text-center">
         <h2>Iniciar sesion</h2>
     </div>
-    <!-- Mensaje de Error -->
-        <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-warning alert-dismissible">
-                        <?= session()->getFlashdata('msg')?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-        <?php endif;?>     
+        
         <!-- Incio del formulario de login-->              
     <form method="post" action="<?php echo base_url('/enviar-form') ?>">
         <div class="card-body" media="(max-width:768px)">
@@ -33,7 +27,7 @@
         
         <input type="submit" value="Ingresar" class="btn btn-dark mb-3">
         
-        <span>¿No tenes una cuenta? <a href="<?php echo base_url('/registrarse'); ?>">Registrarse</a></span>
+        <span>¿No tenes una cuenta? <a href="<?php echo base_url('registrarse'); ?>">Registrarse</a></span>
         </div>
     </form>
 </div>

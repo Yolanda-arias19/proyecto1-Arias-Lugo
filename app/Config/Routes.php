@@ -14,10 +14,10 @@ $routes->get('catalogo_produc', 'Home::catalogo_produc');
 $routes->get('terminosYusos', 'Home::terminosYusos');
 
 /**rutas del registro de usuario */
-$routes->get('/registro', 'Home::registrarse');
+//$routes->get('/registrarse', 'Home::registrarse');
 $routes->post('/enviar-form', 'Usuario_controller::formValidation');
-
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'auth']);
+$routes->get('registrarse', 'Usuario_controller::registrarse');
 
 /**rutas para el login */
 //$routes->get('/login', 'Home::login');

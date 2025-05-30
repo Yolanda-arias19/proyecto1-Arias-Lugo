@@ -14,8 +14,9 @@
     <h1>Registrarse</h1>
     <?php $validation = \Config\Services::validation(); ?>
 
-        <form method="post" class="needs-validation" novalidate action="<?php echo base_url('enviar-form-registro') ?>"> 	
+        <form method="post" class="needs-validation" novalidate action="<?php echo base_url('/enviar-form') ?>"> 	
             <div class ="card-body justify-content-center" media="(max-width:768px)">
+
                 <div class="form mb-2">
                     <label for="ID-Nombre-Registro" class="form-label">Nombre</label>
                     <input name="nombre" id="ID-Nombre-Registro" type="text"  class="form-control" placeholder="ingresa tu nombre" maxlength="30" minlength="3" required>
@@ -31,6 +32,7 @@
                         </div>
                     <?php }?>
                 </div>
+
                 <div class="mb-2">
                     <label for="ID-Apellido-Registro" class="form-label">Apellido</label>
                     <input name="apellido" id="ID-Apellido-Registro" type="text" class="form-control" placeholder="apellido" maxlength="30" minlength="3" required>
@@ -46,6 +48,7 @@
                         </div>
                     <?php }?>
                 </div>
+
                 <div class="mb-2">
                     <label for="ID-Mail-Registro" class="form-label">Correo</label>
                     <input name="email" id="ID-Mail-Registro" type="email" class="form-control"  placeholder="correo@algo.com" maxlength="50" minlength="4" required>
@@ -61,6 +64,7 @@
                         </div>
                     <?php }?>
                 </div>
+
                 <div class="mb-2">
                     <label for="ID-Usuario-Registro" class="form-label">Usuario</label>
                     <input name="usuario" id="ID-Usuario-Registro" type="text" class="form-control" placeholder="usuario" maxlength="20" minlength="3" required>
@@ -76,6 +80,7 @@
                         </div>
                     <?php }?>
                 </div>
+
                 <div class="mb-2">
                     <label for="ID-Contraseña-Registro" class="form-label">Contraseña</label>
                     <input name="pass" id="ID-Contraseña-Registro" type="password" class="form-control"  placeholder="password" maxlength="50" minlength="4" required>
@@ -91,14 +96,7 @@
                         </div>
                     <?php }?>
                 </div>
-                <div class="mb-2">
-                    <label for="ID-Contraseña2-Registro" class="form-label">Vuelva a ingresar la contraseña.</label>
-                    <input name="confirmPass" id="ID-Contraseña2-Registro" type="password" class="form-control"  placeholder="password" maxlength="50" minlength="4" required>
-                    <!-- Error Del Lado del Cliente -->
-                    <div id="ID-Contraseña2-Registro" class="invalid-feedback">
-                        Inserte una contraseña válida. La contraseña debe tener entre 4 y 50 caracteres.
-                    </div>
-                </div>
+                
                 <div class="form-check espacioForm mb-3">
                     <input type="checkbox" class="form-check-input" id="confirmacionTerminosCondiciones" value="" required>
                     <label class="form-check-label" for="confirmacionTerminosCondiciones">Acepto los  <a href="<?php echo base_url('terminosYusos');?>" target="_blank"> Terminos y Condiciones</a> </label>
