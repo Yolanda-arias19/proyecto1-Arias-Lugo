@@ -1,11 +1,26 @@
 <?php
 namespace App\Controllers;
 use CodeIgniter\Controller;
+use App\Models\Perfiles_model;
 use App\Models\Usuarios_model;
 
 class Login_controller extends BaseController{
     public function index(){
         helper(['form', 'url']);
+    }
+
+    public function iniciarSesion ()
+    {
+        $dato['titulo']='Iniciar sesion'; 
+        echo view('front/head_view',$dato);
+        echo view('front/nav_view');
+        echo view('front/login');
+        echo view('front/footer_view');
+    } 
+
+    public function login()
+    {
+        return view('front/login');
     }
     
     public function auth(){
@@ -57,7 +72,7 @@ class Login_controller extends BaseController{
     public function logout(){
         $session = session();
         $session->destroy();
-        return redirect()->to('/');
+        return redirect()->to('/login');
     }
 
 }
