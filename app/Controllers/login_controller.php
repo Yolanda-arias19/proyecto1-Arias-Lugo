@@ -9,19 +9,14 @@ class Login_controller extends BaseController{
         helper(['form', 'url']);
     }
 
-    public function iniciarSesion ()
-    {
-        $dato['titulo']='Iniciar sesion'; 
-        echo view('front/head_view',$dato);
-        echo view('front/nav_view');
-        echo view('front/login');
-        echo view('front/footer_view');
-    } 
-
-    public function login()
-    {
-        return view('front/login');
-    }
+    public function login() // Este método sería la ruta /login o /iniciar-sesion
+{
+    $dato['titulo'] = 'Iniciar sesión';
+    echo view('front/head_view', $dato);
+    echo view('front/nav_view');
+    echo view('front/login'); // Esta es tu vista del formulario
+    echo view('front/footer_view');
+}
     
     public function auth(){
         $session = session();

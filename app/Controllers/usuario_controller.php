@@ -4,15 +4,16 @@ Use App\Models\Usuarios_model;
 use CodeIgniter\Controller;
 
 class Usuario_controller extends Controller{
-    public function_construct(){
+
+    public function __construct(){
         helper(['form', 'url']);
     }
 
-    public function create(){
+    public function registrarse(){
         $dato['titulo'] = 'Registro';
         echo view('front/head_view', $dato);
         echo view('front/nav_view');
-        echo view('back/usuario/registrarse');
+        echo view('front/registrarse');
         echo view('front/footer_view');
     }
 
@@ -37,7 +38,7 @@ class Usuario_controller extends Controller{
         $data['titulo']= 'Registro';
         echo view('front/head_view', $data);
         echo view('front/nav_view');
-        echo view('back/usuario/registrarse', ['validation' => $this->validator]);
+        echo view('front/registrarse', ['validation' => $this->validator]);
     }else{
         $formModel -> save([
             'nombre' => $this->request->getVar('nombre'),
