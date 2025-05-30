@@ -18,7 +18,7 @@ class ProductoController extends Controller{
         $dato['titulo']='Crud_productos';
         echo view ('front/head_view_crud',$dato);
         echo view ('front/nav_view');
-        echo view ('back/productos/producto_nuevo_view', $data);
+        echo view ('front/producto_nuevo_view', $data);
         echo view ('front/footer_view');
     }
     public function creaProducto(){
@@ -29,10 +29,11 @@ class ProductoController extends Controller{
         $dato['titulo']='alta producto';
         echo view ('front/head_view',$dato);
         echo view ('front/nav_view');
-        echo view ('back/productos/alta_producto_view', $data);
+        echo view ('front/alta_producto_view', $data);
         echo view ('front/footer_view');
     }
-     public function store(){
+
+    public function store(){
         $input=$this->validate([ 
             'nombre_producto' => 'required|min_length[3]',
             'categoria' => 'is_not_unique[categorias.id]',
@@ -48,9 +49,9 @@ class ProductoController extends Controller{
             $data['categorias']= $categoria_model-> getCategorias();
             $data['validation'] = $this-> validator;
             $dato['titulo'] = 'alta';
-             echo view ('front/head_view',$dato);
-             echo view ('front/nav_view');
-             echo view ('back/productos/alta_producto_view', $data);
+                echo view ('front/head_view',$dato);
+                echo view ('front/nav_view');
+                echo view ('front/alta_producto_view', $data);
         }else{
             $img=$this -> getFile('imagen');
             $nombre_aleatorio = $img -> getRandomName();
@@ -69,5 +70,5 @@ class ProductoController extends Controller{
             session()-> setFlashdata('sucess', 'alta exitosa...');
             return $this-> response ->rediret(site_url('crear'));
         }
-     }
+    }
 }
