@@ -71,3 +71,18 @@ class ProductoController extends Controller{
         }
      }
 }
+
+public function creaproducto(){
+    $categoriasmodel = new categoria_model();
+    $data['categoria'] = $categoriasmodel -> getCategorias();
+
+    $productoModel = new Producto_Model();
+    $data['obj'] = $productoModel -> orderby ('id', 'DESC')->findAll();
+
+    $dato['titulo']='Alta producto';
+     echo view ('front/head_view', $dato);
+     echo view('front/nav_view');
+     echo view('back/productos/alta_producto_view', $data);
+     echo view('front/footer_view');
+     
+}
