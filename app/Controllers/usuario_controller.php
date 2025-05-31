@@ -32,7 +32,7 @@ class Usuario_controller extends Controller{
         /**ERRORES */
     );
 
-    $formModel = new Usuario_model();
+    $formModel = new Usuarios_model();
 
     if(!$input){
         $data['titulo']= 'Registro';
