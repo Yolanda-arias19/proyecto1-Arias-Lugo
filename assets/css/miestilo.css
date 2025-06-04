@@ -73,7 +73,7 @@ body{
 .btnLogin-popup:hover{
     background-color: #f26d8c;
 }
-
+/*
     .icon-close {
     position: absolute;
     top: 0;
@@ -89,7 +89,7 @@ body{
     z-index: 1;
     }
 
-/* Modal */
+ Modal 
     .modal-content {
         border-radius: 16px;
         border: 2px solid #f1dbe2;
@@ -199,7 +199,7 @@ body{
 .input-box input:focus~label,
 .input-box input:valid~label{
     top: -5px;
-}
+}*/
 
 .c-item{
     margin-top: 120px;
@@ -472,4 +472,108 @@ body{
     margin-left: 173px;
 }
 
+.iniciar_sesion form{
+    margin: auto;
+    margin-top: 130px;
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;
+    box-shadow: 0 0 55px #0006;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+.iniciar_sesion form h2{
+    text-align: center;
+}
+
+.iniciar_sesion .form_input{
+    padding: 6px 20px;
+}
+
+.iniciar_sesion input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #f7f2ec;
+    background-color: #f7f2ec;
+    border-radius: 4px;
+    color: #000;
+    outline: none;
+}
+
+.iniciar_sesion label{
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #f06d8b;
+}
+
+.iniciar_sesion .ingresar{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    background-color: #f2a6b7;
+    width: 30%;
+    margin-left: 173px;
+}
+
+.iniciar_sesion p{
+    padding-left: 15px;
+}
+
+.iniciar_sesion a{
+    color: #f34b72;
+    text-decoration: none;
+}
+
+.registro form{
+    margin: auto;
+    margin-top: 130px;
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;
+    box-shadow: 0 0 55px #0006;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.registro form h2{
+    text-align: center;
+}
+
+.registro .form_input{
+    padding: 6px 20px;
+}
+
+.registro input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #f7f2ec;
+    background-color: #f7f2ec;
+    border-radius: 4px;
+    color: #000;
+    outline: none;
+}
+
+.registro label{
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #f06d8b;
+}
+
+.registro .registrarse{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f2a6b7;
+    width: 30%;
+    margin-left: 173px;
+}
+
+.registro p{
+    padding-left: 15px;
+}
+
+.registro a{
+    color: #f34b72;
+    text-decoration: none;
+}
