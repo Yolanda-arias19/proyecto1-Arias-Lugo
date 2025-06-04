@@ -9,36 +9,37 @@ class Login_controller extends BaseController{
         helper(['form', 'url']);
     }
 
-    public function login() // Este método sería la ruta /login o /iniciar-sesion
-{
-    $dato['titulo'] = 'Iniciar sesión';
-    echo view('front/head_view', $dato);
-    echo view('front/nav_view');
-    echo view('front/login'); // Esta es tu vista del formulario
-    echo view('front/footer_view');
-}
-    
+    public function login()
+    {
+        $dato['titulo'] = 'Iniciar sesión';
+        echo view('front/head_view', $dato);
+        echo view('front/nav_view');
+        echo view('front/login');
+        echo view('front/footer_view');
+    }
+
     public function auth(){
         $session = session();
         $model = new Usuarios_model();
 
-        $email = $this->request->getVar('email');
-        $password = $this->request->getVar('pass');
+        $usuario = $this->request->getVar('usuario');
+        $password = $this->request->getVar('pass'); // Contraseña ingresada por el usuario
 
-        $data = $model->where('email', $email)->first();
+        $data = $model->where('usuario', $usuario)->first();
+
         if($data){
-            $pass = $data['pass'];
-            $ba = $data['baja'];
+            $pass = $data['pass']; // Contraseña HASHED de la base de datos
+            $ba = $data['baja']; // Estado de baja del usuario
             if($ba == 'SI'){
                 $session->setFlashdata('msg', 'usuario dado de baja');
-                return redirect()->to('/');
+                return redirect()->to('/login');
             }
 
             $verify_pass = password_verify($password, $pass);
 
             if($verify_pass){
                 $ses_data = [
-                    'id_usuario' => $data['id_usuario'],
+                    'id_usuario' => $data['id_usuario'], // Asegúrate que la columna se llama 'id_usuario' en tu DB
                     'nombre' => $data['nombre'],
                     'apellido' => $data['apellido'],
                     'email' => $data['email'],
@@ -53,10 +54,8 @@ class Login_controller extends BaseController{
                 return redirect()->to('/');
 
             }else{
-
                 session()->setFlashdata('msg', 'Password Incorrecta');
                 return redirect()->to('/login');
-
             }
         }else{
             session()->setFlashdata('msg', 'No ingreso el email o el mismo es incorrecto');
@@ -69,5 +68,4 @@ class Login_controller extends BaseController{
         $session->destroy();
         return redirect()->to('/login');
     }
-
 }

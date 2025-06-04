@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 namespace App\Controllers;
 Use App\Models\Productos_Model;
@@ -214,4 +214,3 @@ class Productocontroller extends Controller{
     </div>
 </div>
 </section>
->>>>>>> 2f042e53f3a46fd44c01af707000097804dfe303

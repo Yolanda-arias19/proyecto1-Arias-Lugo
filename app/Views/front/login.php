@@ -7,7 +7,7 @@
 
 <section class="iniciar_sesion">
         <!-- Incio del formulario de login-->              
-    <form class="login" method="post" action="<?php echo base_url('/enviar-form') ?>">
+    <form class="login" method="post" action="<?php echo base_url('/enviarlogin') ?>">
         <h2>Iniciar sesión</h2> 
 
         <div class="form_input">
