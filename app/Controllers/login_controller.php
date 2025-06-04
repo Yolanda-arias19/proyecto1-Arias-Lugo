@@ -51,7 +51,9 @@ class Login_controller extends BaseController{
                 $session->set($ses_data);
 
                 session()->setFlashdata('msg', 'Bienvenido!!');
-                return redirect()->to('/');
+                return redirect()->to('/nueva_plantilla');
+                //return redirect()->to('/');
+                
 
             }else{
                 session()->setFlashdata('msg', 'Password Incorrecta');

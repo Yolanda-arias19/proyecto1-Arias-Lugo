@@ -22,7 +22,7 @@ $routes->get('registrarse', 'Usuario_controller::registrarse');
 /**rutas para el login */
 //$routes->get('/login', 'Home::login');
 $routes->post('/enviarlogin', 'login_controller::auth');
-$routes->get('/panel', 'Panel_controller::index', ['filter' => 'auth']);
+//$routes->get('/panel', 'Panel_controller::index', ['filter' => 'auth']);
 $routes->get('/logout', 'login_controller::logout');
 
 $routes->get('login', 'login_controller::login');

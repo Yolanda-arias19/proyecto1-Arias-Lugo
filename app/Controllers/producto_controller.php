@@ -8,7 +8,7 @@ Use App\Models\Ventas_Detalle_Model;
 use CodeIgniter\Controller;
 
 class ProductoController extends Controller{
-    public function_construc(){
+    public function __construc(){
         helper (['url','form']);
         $session= session();
     }
