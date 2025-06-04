@@ -26,7 +26,7 @@ class Usuario_controller extends Controller{
             'nombre' => 'required|min_length[3]',
             'apellido' => 'required|min_length[3]|max_length[25]',
             'usuario' =>'required|min_length[3]',
-            'email' =>'required|min_length[4]|max_lenght[100]|valid_email|this_unique[usuario.email]',
+            'email' =>'required|min_length[4]|max_length[100]|valid_email|is_unique[usuario.email]',
             'pass' => 'required|min_length[3]|max_length[10]',
         ],
         /**ERRORES */
@@ -45,11 +45,12 @@ class Usuario_controller extends Controller{
             'apellido' => $this->request->getVar('apellido'),
             'usuario' => $this->request->getVar('usuario'),
             'email' => $this->request->getVar('email'),
-            'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT)
+            'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
+            'perfil_id' => 2,
         ]);
 
         session()->setFlashdata('success', 'Usuario registrado con existo');
-        return $this->response->redirect(to_url('/registrarse'));
+        return $this->response->redirect(to_url('/login'));
     }
 
     }
