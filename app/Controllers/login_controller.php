@@ -39,7 +39,7 @@ class Login_controller extends BaseController{
 
             if($verify_pass){
                 $ses_data = [
-                    'id_usuario' => $data['id_usuario'], // Asegúrate que la columna se llama 'id_usuario' en tu DB
+                    'id_usuario' => $data['id'], // Asegúrate que la columna se llama 'id_usuario' en tu DB
                     'nombre' => $data['nombre'],
                     'apellido' => $data['apellido'],
                     'email' => $data['email'],
@@ -51,7 +51,7 @@ class Login_controller extends BaseController{
                 $session->set($ses_data);
 
                 session()->setFlashdata('msg', 'Bienvenido!!');
-                return redirect()->to('/nueva_plantilla');
+                return redirect()->to('/');
                 //return redirect()->to('/');
                 
 

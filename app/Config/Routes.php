@@ -26,3 +26,20 @@ $routes->post('/enviarlogin', 'login_controller::auth');
 $routes->get('/logout', 'login_controller::logout');
 
 $routes->get('login', 'login_controller::login');
+
+
+//other routes
+$routes->get('abm_producto(:any)', 'producto_controller::mostrarProductos/$1');
+$routes->get('bajaProducto(:num)', 'producto_controller::deleteproducto/$1');
+$routes->get('activarProducto(:num)', 'producto_controller::activarproducto/$1');
+$routes->get('altaProducto', 'producto_controller::creaProducto');
+$routes->post('enviar-prod', 'producto_controller::store');
+
+
+$routes->post('enviar-form-consultas', 'consulta_controller::validarMensajeConsultas');
+$routes->get('mostrarMensajes(:any)', 'consulta_controller::mostrarMensajes/$1');
+$routes->get('marcarLeido(:num)', 'consulta_controller::marcarLeido/$1');
+
+$routes->get('abm_usuario(:any)', 'usuario_controller::mostrarABM/$1');
+$routes->get('bajaUsuario(:num)', 'usuario_controller::bajaUsuario/$1');
+$routes->get('activarUsuario(:num)', 'usuario_controller::activarUsuario/$1');

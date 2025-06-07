@@ -1,6 +1,6 @@
 
-<?php if(!empty (session()->getFlashdata('success'))):?>
-    <div class="alert alert-success alert-dismissible"><?=session()->getFlashdata('success');?>
+<?php if(!empty (session()->getFlashdata('msg'))):?>
+    <div class="alert alert-success alert-dismissible"><?=session()->getFlashdata('msg');?>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 <?php endif?>  

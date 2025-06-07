@@ -22,7 +22,7 @@
       <div class="offcanvas-body">
 <!--Barra de navegación admin-->
     <?php if($perfil == 1): ?>
-      <div class="btn btn-info active btnUser btn-sm"><a href="">USUARIO: <?php echo session('nombre'); ?></a></div>
+      <div class=""><a href="">USUARIO: <?php echo session('nombre'); ?></a></div>
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="<?php echo base_url('quienes_somos');?>">Quienes somos</a>
@@ -59,10 +59,10 @@
               Operaciones Admin
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">CRUD usuarios</a></li>
-              <li><a class="dropdown-item" href="#">CRUD productos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('abm_usuario'.'todos'); ?>">CRUD usuarios</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('abm_producto'.'todos'); ?>">CRUD productos</a></li>
               <li><a class="dropdown-item" href="#">Muestra ventas</a></li>
-              <li><a class="dropdown-item" href="#">Consultas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('mostrarMensajes'.'todos'); ?>">Consultas</a></li>
             </ul>
           </li>
           <!--Fin del menu desplegable operacines admin-->
@@ -71,7 +71,7 @@
 
       <!--Aca es la del cliente-->
       <?php elseif($perfil == 2): ?>
-        <div class="btn btn-info active btnUser btn-sm"><a href="">CLIENTE: <?php echo session('nombre'); ?></a></div>
+        <div class=""><a href="">CLIENTE: <?php echo session('nombre'); ?></a></div>
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="<?php echo base_url('quienes_somos');?>">Quienes somos</a>
@@ -144,7 +144,7 @@
                 <?php if (empty($nombre)): ?>
                       <a class="btnLogin-popup" href="<?php echo base_url('login');?>">Iniciar sesión</a>
                     <?php else: ?>
-                      <a class="btn btn-danger" href="<?php echo base_url('logout');?>">Cerrar sesión</a>
+                      <a class="btnLogin-popup" href="<?php echo base_url('logout');?>">Cerrar sesión</a>
                 <?php endif; ?>
                 </div>
   </div>

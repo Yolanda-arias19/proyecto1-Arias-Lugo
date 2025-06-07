@@ -17,12 +17,12 @@
         <?php $validation = \Config\Services::validation(); ?>
 
         <!--inicio del formulario-->
-        <form action="<?= base_url('/enviar-prod'); ?>" method="post" enctype="multipart/form-data">
+        <form action="<?= base_url('enviar-prod'); ?>" method="post" enctype="multipart/form-data">
             <div class="card-body" media="(max-width:568px)">
 
                 <div class="mb-2">
                     <label for="nombre_prod" class="form-label">Producto</label>
-                    <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" value="<?= set_value('nombre_prod'); ?>" placeholder="Nombre del producto" autofocus>
+                    <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" placeholder="Nombre del producto" autofocus required>
                     
                     <!--Error-->
                     <?php if($validation->getError('nombre_prod')): ?>
@@ -31,12 +31,21 @@
                 </div>
 
                 <div class="mb-2">
-                <select class="form-control" name="categoria" id="categoria">
-                    <option value="0">Seleccionar Categoría</option>
-                    <?php foreach($categorias as $categoria):?>
-                        <option value="<?= $categoria['id'];?>" <?= set_select('categoria', $categoria['id']);?>><?= $categoria['id'], ". ", $categoria['descripcion'];?></option>
-                        <?php endforeach; ?>
-                </select>
+                <?php if (!empty($categorias) && is_array($categorias)): ?>
+                            <?php $contador = 1;?>
+                            <label for="ID-Categoria" class="form-label">Categoria</label>
+                            <select name="categoria_id"  id="ID-Categoria" class="form-select" aria-label="categoria" required>
+                                <option value="">Seleccionar Categoria </option>
+                                <?php foreach ($categorias as $categoria):?>
+                                    <option value="<?php echo $categoria['id'];?>"> <?php echo $contador, " - " , $categoria['descripcion']; ?>
+                                    </option>
+                                    <?php $contador++;?>
+                                    <div id="ID-categoria" class="invalid-feedback">
+                                        Inserte una categoria válida.
+                                    </div>
+                                <?php endforeach ?>
+                            </select>
+                        <?php endif ?>
                     <!--Error-->
                     <?php if($validation->getError('categoria')): ?>
                         <div class="alert alert-danger mt-2"><?= $validation->getError('categoria'); ?></div>
@@ -45,7 +54,7 @@
 
                 <div class="mb-2">
                     <label for="precio" class="form-label">Precio de costo</label>
-                    <input class="form-control" type="text" name="precio" id="precio" value="<?= set_value('precio'); ?>">
+                    <input class="form-control" type="text" name="precio" id="precio" required>
                     
                     <!--Error-->
                     <?php if($validation->getError('precio')): ?>
@@ -55,7 +64,7 @@
 
                 <div class="mb-2">
                     <label for="precio_vta" class="form-label">Precio de venta</label>
-                    <input class="form-control" type="text" name="precio_vta" id="precio_vta" value="<?= set_value('precio_vta'); ?>">
+                    <input class="form-control" type="text" name="precio_vta" id="precio_vta" required>
                     
                     <!--Error-->
                     <?php if($validation->getError('precio_vta')): ?>
@@ -65,7 +74,7 @@
 
                 <div class="mb-2">
                     <label for="stock" class="form-label">Stock</label>
-                    <input class="form-control" type="text" name="stock" id="stock" value="<?= set_value('stock'); ?>">
+                    <input class="form-control" type="text" name="stock" id="stock" required>
                     
                     <!--Error-->
                     <?php if($validation->getError('stock')): ?>
@@ -75,7 +84,7 @@
 
                 <div class="mb-2">
                     <label for="stock_min" class="form-label">Stock Mínimo</label>
-                    <input class="form-control" type="text" name="stock_min" id="stock_min" value="<?= set_value('stock'); ?>">
+                    <input class="form-control" type="text" name="stock_min" id="stock_min" required>
                     
                     <!--Error-->
                     <?php if($validation->getError('stock_min')): ?>

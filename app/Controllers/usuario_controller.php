@@ -49,9 +49,44 @@ class Usuario_controller extends Controller{
             'perfil_id' => 2,
         ]);
 
-        session()->setFlashdata('success', 'Usuario registrado con existo');
+        session()->setFlashdata('msg', 'Usuario registrado con existo');
         return redirect()->to('/login');
     }
 
     }
+
+    public function mostrarABM($filtro){
+        $usuarioModel= new Usuarios_model();
+
+        if($filtro =='todos'){
+            $data['usuarios']=$usuarioModel -> getUsuarioAll();
+        }elseif($filtro == 'activos'){
+            $data['usuarios']=$usuarioModel -> getActiveUsuarioAll();
+        }else{
+            $data['usuarios']=$usuarioModel -> getDeleteUsuarioAll();
+        }
+
+        $dato['titulo']='Crud_usuarios';
+        echo view ('front/head_view',$dato);
+        echo view ('front/nav_view');
+        echo view ('front/usuariosABM', $data);
+        echo view ('front/footer_view');
+    }
+
+    public function bajaUsuario($id){
+    $usuarioModel = new Usuarios_model();
+    $data['baja'] = $usuarioModel ->where('id', $id)->first();
+    $data['baja'] = 'si';
+    $usuarioModel->update($id, $data);
+    return redirect()->back();
+}
+public function activarUsuario($id){
+    $usuarioModel= new Usuarios_model();
+    $data['baja'] = $usuarioModel ->where('id', $id)->first();
+    $data['baja'] = 'no';
+    $usuarioModel->update($id, $data);
+    return redirect()->back();
+}
+
+
 }
