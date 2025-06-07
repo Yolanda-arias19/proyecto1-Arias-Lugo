@@ -1,9 +1,14 @@
-<section>
-    <a href="<?php echo base_url('abm_usuario'.'activos'); ?>" class="btn btn-dark mb-1">Usuarios activos</a>
-    <a href="<?php echo base_url('abm_usuario'.'eliminados'); ?>" class="btn btn-dark mb-1">Usuarios eliminados</a>
-    <a href="<?php echo base_url('abm_usuario'.'todos');?>" class="btn btn-dark mb-1">Eliminar Filtro</a>
+<section class="abm">
 
-    <div class="table-responsive">
+    <h1>Usuarios ABM</h1>
+    
+    <div class= "botones">
+    <a href="<?php echo base_url('abm_usuario'.'activos'); ?>" class="btn">Usuarios activos</a>
+    <a href="<?php echo base_url('abm_usuario'.'eliminados'); ?>" class="btn">Usuarios eliminados</a>
+    <a href="<?php echo base_url('abm_usuario'.'todos');?>" class="btn">Eliminar Filtro</a>
+</div>
+
+    <div class="table-responsive mt-5">
         <table class="table table-striped" id="user-list">
             <thead>
                 <tr>
@@ -33,9 +38,9 @@
                             <td>
                             <?php if ($user['usuario']!=session()->get('usuario')): ?>
                                 <?php if ($eliminado == 'no'): ?>
-                                    <a href="<?php echo base_url('bajaUsuario'.$user['id'])?>" class="btn btn-secondary btn-sm mt-1">Dar de baja</a> 
+                                    <a href="<?php echo base_url('bajaUsuario'.$user['id'])?>" class="btn">Dar de baja</a> 
                                 <?php else: ?>
-                                    <a href="<?php echo base_url('activarUsuario'.$user['id'])?>" class="btn btn-secondary btn-sm mt-1">Dar de alta</a> 
+                                    <a href="<?php echo base_url('activarUsuario'.$user['id'])?>" class="btn">Dar de alta</a> 
                                 <?php endif; ?>
                             <?php endif; ?>
                             </td>

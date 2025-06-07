@@ -73,133 +73,7 @@ body{
 .btnLogin-popup:hover{
     background-color: #f26d8c;
 }
-/*
-    .icon-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    font-size: 3em;
-    color: #f34b72;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1;
-    }
 
- Modal 
-    .modal-content {
-        border-radius: 16px;
-        border: 2px solid #f1dbe2;
-        padding: 2rem;
-    }
-
-.form-box {
-      display: none;
-      animation: fade 0.3s ease-in-out;
-    }
-
-    .form-box.active {
-      display: block;
-    }
-
-    @keyframes fade {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-
-.form-box h2{
-    font-size: 2rem;
-    color: #f26d8c;
-    text-align: center;
-}
-
-.input-box{
-    position:relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #f26d8c;
-    margin: 30px 0;
-}
-
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #f26d8c;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #000;
-    font-weight: 500;
-    padding: 0 35px 0 5px;
-}
-
-
-.btn-custom{
-    width: 100%;
-    height: 45px;
-    background: #f34b72;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #f1dbe2;
-    font-weight: 500;
-}
-
-.login-register{
-    font-size: .9em;
-    color: #4bf36f;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
-}
-
-.login-register p a{
-    color: #4bf383;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login-register p a:hover{
-    text-decoration: underline;
-
-}
-
-.input-box .icon{
-    position: absolute;
-    right: 8px;
-    font-size: 1.2rem;
-    color: #f26d8c;
-    line-height: 57px;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label{
-    top: -5px;
-}*/
 
 .c-item{
     margin-top: 120px;
@@ -576,4 +450,91 @@ body{
 .registro a{
     color: #f34b72;
     text-decoration: none;
+}
+
+.abm {
+    margin-top: 146px;
+}
+
+.abm h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.abm .btn{
+    color:#f7f2ec;
+    background-color: #f34b72;
+}
+
+.abm .botones{
+    margin-left: 20px;
+}
+
+.abm .botones a{
+    margin-right: 4px;
+}
+
+.formulario_abm {
+    margin-top: 140px;
+}
+
+.formulario_abm form{
+    margin: auto;
+    margin-top: 130px;
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 700px;
+    box-shadow: 0 0 55px #0006;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.formulario_abm h2{
+    text-align: center;
+    margin-bottom: 16px;
+    color: #f06d8b;
+}
+
+.formulario_abm input{
+    width: 95%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #f7f2ec;
+    background-color: #f7f2ec;
+    border-radius: 4px;
+    color: #000;
+    outline: none;
+    margin-left: 18px;
+}
+
+.formulario_abm label{
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #f06d8b;
+    padding-left: 18px;
+}
+
+.formulario_abm .btn{
+    color:#f7f2ec;
+    background-color: #f34b72;
+}
+
+.formulario_abm .form-group{
+    margin-left: 225px;
+}
+
+.formulario_abm button{
+    margin-right: 4px;
+}
+
+.formulario_abm select{
+    width: 95%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #f7f2ec;
+    background-color: #f7f2ec;
+    border-radius: 4px;
+    color: #f34b72;
+    outline: none;
+    margin-left: 18px;
 }

@@ -1,10 +1,4 @@
-<section>
-    <div class="container mt-1 mb-1 d-flex justify-content-center">
-        <div class="card" style="width: 75%;">
-        <div class="card-hearder text-center">
-            <!--titulo del formulario-->
-            <h2>Alta de productos</h2>
-        </div>
+<section class= "formulario_abm">
 
         <!--validacion-->
         <?php if(!empty(session()->getFlashdata('fail'))): ?>
@@ -18,8 +12,8 @@
 
         <!--inicio del formulario-->
         <form action="<?= base_url('enviar-prod'); ?>" method="post" enctype="multipart/form-data">
-            <div class="card-body" media="(max-width:568px)">
-
+        
+            <h2>Alta de productos</h2>
                 <div class="mb-2">
                     <label for="nombre_prod" class="form-label">Producto</label>
                     <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" placeholder="Nombre del producto" autofocus required>
@@ -104,13 +98,9 @@
                 
                 <!--Botones-->
                 <div class="form-group">
-                    <button type="submit" id="send_form" class="btn btn-success">Enviar</button>
-                    <button type="reset" class="btn btn-danger">Cancelar</button>
-                    <a href="<?= base_url('crear'); ?>" class="btn btn-secondary">Volver</a>
+                    <button type="submit" id="send_form" class="btn">Enviar</button>
+                    <button type="reset" class="btn">Cancelar</button>
+                    <a href="<?= base_url('crear'); ?>" class="btn">Volver</a>
                 </div>
-
-            </div>
         </form><!--Fin del formulario-->
-    </div>
-</div>
 </section>

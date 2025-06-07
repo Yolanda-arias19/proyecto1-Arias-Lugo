@@ -1,10 +1,14 @@
-<section>
-    <a href="<?php echo base_url('mostrarMensajes'.'todos') ;?>" class="btn btn-dark mb-1">Todos los mensajes</a>
-    <a href="<?php echo base_url('mostrarMensajes'.'leidos') ;?>" class="btn btn-dark mb-1">Leidos</a>
-    <a href="<?php echo base_url('mostrarMensajes'.'no_leidos') ;?>" class="btn btn-dark mb-1">No leidos</a>
+<section class="abm">
 
-    <div class="table-responsive">
-        <table class="table table-striped" id="consulta-list">
+    <h1>Consultas Administrador</h1>
+    <div class= "botones">
+    <a href="<?php echo base_url('mostrarMensajes'.'todos') ;?>" class="btn">Todos los mensajes</a>
+    <a href="<?php echo base_url('mostrarMensajes'.'leidos') ;?>" class="btn">Leidos</a>
+    <a href="<?php echo base_url('mostrarMensajes'.'no_leidos') ;?>"class="btn">No leidos</a>
+</div>
+
+    <div class="table-responsive mt-5">
+        <table class="tablero table table-striped" id="consulta-list">
             <thead>
                 <tr>
                 <th>ID</th>
@@ -30,7 +34,7 @@
                             <td><?php echo $consulta['estado']; ?></td>
                             <td>
                                 <?php if ($estado == 'no_leido'): ?>
-                                    <a href="<?php echo base_url('marcarLeido'.$consulta['id']);?>" class="btn btn-secondary btn-sm mt-1">Marcar como leido</a> 
+                                    <a href="<?php echo base_url('marcarLeido'.$consulta['id']);?>" class="btn">Marcar como leido</a> 
                                 <?php endif; ?>
                             </td>
                     </tr>

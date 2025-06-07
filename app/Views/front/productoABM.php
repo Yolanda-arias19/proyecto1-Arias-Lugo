@@ -1,12 +1,15 @@
-<section class= "mb-5">
-<!--Hacer los botones para mostrar eliminado o crear producto -->
+<section class= "abm">
 
-    <a href="<?php echo base_url('abm_producto'.'todos');?>" class="btn btn-secondary">Todos</a>
-    <a href="<?php echo base_url('abm_producto'.'activos');?>" class="btn btn-secondary">Activos</a>
-    <a href="<?php echo base_url('abm_producto'.'eliminados');?>" class="btn btn-secondary">Eliminados</a>
-    <a href="<?php echo base_url('altaProducto');?>" class="btn btn-secondary">Nuevo Producto</a>
+    <h1>Producto ABM</h1>
 
-    <div class= "table-responsive mt-5 mb-5">
+    <div class= "botones">
+    <a href="<?php echo base_url('abm_producto'.'todos');?>" class="btn">Todos</a>
+    <a href="<?php echo base_url('abm_producto'.'activos');?>" class="btn">Activos</a>
+    <a href="<?php echo base_url('abm_producto'.'eliminados');?>" class="btn">Eliminados</a>
+    <a href="<?php echo base_url('altaProducto');?>" class="btn">Nuevo Producto</a>
+</div>
+
+    <div class= "table-responsive mt-5">
         <table class="table table-striped" id="prod-list">
             <thead>
 
@@ -40,11 +43,11 @@
                             <td> <img height="70px" width="85px" src="<?=base_url()?>/assets/img/<?=$imagen?>"></td>
                             <td><b><?php echo $eliminado; ?></b></td>
                             <td>
-                                <a href="" class="btn btn-secondary btn-sm mt-1">Editar</a>
+                                <a href="" class="btn">Editar</a>
                                 <?php if ($eliminado == 'NO'): ?>
-                                    <a href="<?php echo base_url('bajaProducto'.$id)?>" class="btn btn-secondary btn-sm mt-1">Dar de baja</a> 
+                                    <a href="<?php echo base_url('bajaProducto'.$id)?>" class="btn">Dar de baja</a> 
                                 <?php else: ?>
-                                    <a href="<?php echo base_url('activarProducto'.$id)?>" class="btn btn-secondary btn-sm mt-1">Dar de alta</a> 
+                                    <a href="<?php echo base_url('activarProducto'.$id)?>" class="btn">Dar de alta</a> 
                                 <?php endif; ?>
                             </td>
                 </tr>
