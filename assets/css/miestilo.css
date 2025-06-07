@@ -59,6 +59,16 @@ body{
     border-radius: 50%;
 }
 
+.nombre-log{
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+.nombre-log a{
+    color: #f34b72;
+    text-decoration: none;
+}
+
 .btnLogin-popup{
     background-color: #f34b72;
     color: #f1dbe2;

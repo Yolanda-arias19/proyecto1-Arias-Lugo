@@ -22,7 +22,7 @@
       <div class="offcanvas-body">
 <!--Barra de navegación admin-->
     <?php if($perfil == 1): ?>
-      <div class=""><a href="">USUARIO: <?php echo session('nombre'); ?></a></div>
+      <div class="nombre-log"><a href="">USUARIO: <?php echo session('nombre'); ?></a></div>
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="<?php echo base_url('quienes_somos');?>">Quienes somos</a>
@@ -71,7 +71,7 @@
 
       <!--Aca es la del cliente-->
       <?php elseif($perfil == 2): ?>
-        <div class=""><a href="">CLIENTE: <?php echo session('nombre'); ?></a></div>
+        <div class="nombre-log"><a href="">CLIENTE: <?php echo session('nombre'); ?></a></div>
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="<?php echo base_url('quienes_somos');?>">Quienes somos</a>
