@@ -11,7 +11,7 @@
         <?php $validation = \Config\Services::validation(); ?>
 
         <!--inicio del formulario-->
-        <form action="<?= base_url('enviar-prod'); ?>" method="post" enctype="multipart/form-data">
+        <form class="needs-validation" action="<?= base_url('enviar-prod'); ?>" method="post" enctype="multipart/form-data">
         
             <h2>Alta de productos</h2>
                 <div class="mb-2">

@@ -156,4 +156,91 @@ public function activarproducto($id){
     $productoModel->update($id, $data);
     return redirect()->back();
 }
+
+public function singleProducto($id = null){
+    $productoModel = new Producto_model();
+    $data['old'] = $productoModel->where('id', $id)->first();
+    if(empty($data['old'])){
+        throw new \CodeIgniter\Exceptions\PageNotFoundException(' No se ha encontrado el producto seleccionado');
+    }
+
+    $categoriasModel=new Categoria_model();
+        $data['categorias'] = $categoriasModel-> getCategorias();
+        $dato['titulo']='alta producto';
+        echo view ('front/head_view',$dato);
+        echo view ('front/nav_view');
+        echo view ('front/edit', $data);
+        echo view ('front/footer_view');
+}
+
+public function modificaProducto($id){
+     $rules = [
+            'nombre_prod'  => 'required|min_length[3]',
+            'precio'       => 'required|numeric',
+            'precio_vta'   => 'required|numeric',
+            'stock'        => 'required|numeric', // 'required' y 'numeric' para stock
+            'stock_min'    => 'required|numeric', // 'required' y 'numeric' para stock_min
+            
+        ];
+
+        // Mensajes personalizados para una mejor experiencia de usuario
+        $messages = [
+            'nombre_prod' => [
+                'required'   => 'El nombre del producto es obligatorio.',
+                'min_length' => 'El nombre del producto debe tener al menos 3 caracteres.',
+            ],
+            'precio' => [
+                'required' => 'El precio de costo es obligatorio.',
+                'numeric'  => 'El precio de costo debe ser un número.',
+            ],
+            'precio_vta' => [
+                'required' => 'El precio de venta es obligatorio.',
+                'numeric'  => 'El precio de venta debe ser un número.',
+            ],
+            'stock' => [
+                'required' => 'El stock es obligatorio.',
+                'numeric'  => 'El stock debe ser un número.',
+            ],
+            'stock_min' => [
+                'required' => 'El stock mínimo es obligatorio.',
+                'numeric'  => 'El stock mínimo debe ser un número.',
+            ],
+        ];
+
+        // Se usa validate() con las reglas y mensajes definidos
+        if ($this->validate($rules, $messages)) {
+            $productoModel = new Producto_model();
+            $img = $this->request->getFile('imagen');
+            if($img && $img->isValid()){
+                $nombre_aleatorio = $img->getRandomName();
+                $img->move(ROOTPATH.'assets/img', $nombre_aleatorio);
+                $data = [
+                    'nombre_prod' => $this->request->getVar('nombre_prod'),
+                    'imagen' => $img->getName(),
+                    'categoria_id'=>$this->request->getVar('categoria_id'),
+                    'precio' => $this->request->getVar('precio'),
+                    'precio_vta' => $this->request->getVar('precio_vta'),
+                    'stock' => $this->request->getVar('stock'),
+                    'stock_min' => $this->request->getVar('stock_min'),
+                ];
+            }else{
+                $data = [
+                    'nombre_prod' => $this->request->getVar('nombre_prod'),
+                    'categoria_id'=>$this->request->getVar('categoria_id'),
+                    'precio' => $this->request->getVar('precio'),
+                    'precio_vta' => $this->request->getVar('precio_vta'),
+                    'stock' => $this->request->getVar('stock'),
+                    'stock_min' => $this->request->getVar('stock_min'),
+                ];
+            }
+            $productoModel->update($id, $data);
+            session()->setFlashdata('success', 'Modificación exitosa...');
+            return $this->response->redirect(site_url('abm_producto'.'todos'));
+
+        } else {
+            session()->setFlashdata('fail', 'Error se ha producido un inconveniente en su solicitud.');
+            return $this->response->redirect(site_url('abm_producto'.'todos'));
+        }
+}
+
 }

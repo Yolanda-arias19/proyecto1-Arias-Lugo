@@ -1,4 +1,12 @@
 <section class= "abm">
+    <?php if(!empty(session()->getFlashdata('fail'))): ?>
+            <div class="alert alert-danger"><?=session()->getFlashdata('fail')?></div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <?php endif; ?>
+        <?php if(!empty(session()->getFlashdata('success'))): ?>
+            <div class="alert alert-success"><?=session()->getFlashdata('success')?></div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <?php endif; ?>
 
     <h1>Producto ABM</h1>
 
@@ -43,7 +51,7 @@
                             <td> <img height="70px" width="85px" src="<?=base_url()?>/assets/img/<?=$imagen?>"></td>
                             <td><b><?php echo $eliminado; ?></b></td>
                             <td>
-                                <a href="" class="btn">Editar</a>
+                                <a href="<?php echo base_url('editar_prod'.$id);?>" class="btn">Editar</a>
                                 <?php if ($eliminado == 'NO'): ?>
                                     <a href="<?php echo base_url('bajaProducto'.$id)?>" class="btn">Dar de baja</a> 
                                 <?php else: ?>
