@@ -157,7 +157,11 @@
                 <?php endif; ?>
       </div>
     </div>
-    
+          <div class="icono_cart">
+            <?php if($perfil !=1): ?>
+            <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+            <?php endif; ?>
+          </div>
           <div class="d-flex">
                 <?php if (empty($nombre)): ?>
                       <a class="btnLogin-popup" href="<?php echo base_url('login');?>">Iniciar sesión</a>

@@ -32,6 +32,13 @@ body{
     color: #000;
 }
 
+ion-icon{
+    color:#f34b72;
+    font-size: 45px;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
 
 @media(min-width: 991px) {
     
