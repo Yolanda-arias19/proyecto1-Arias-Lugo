@@ -42,6 +42,7 @@
               Catálogo
             </a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc');?>">Todos</a></li>
               <li><a class="dropdown-item" href="#">Tortas</a></li>
               <li><a class="dropdown-item" href="#">Postres</a></li>
               <li><a class="dropdown-item" href="#">Tartas</a></li>
@@ -91,6 +92,7 @@
               Catálogo
             </a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc');?>">Todos</a></li>
               <li><a class="dropdown-item" href="#">Tortas</a></li>
               <li><a class="dropdown-item" href="#">Postres</a></li>
               <li><a class="dropdown-item" href="#">Tartas</a></li>
@@ -125,8 +127,9 @@
               Catálogo
             </a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'0');?>">Todos</a></li>
               <li><a class="dropdown-item" href="#">Tortas</a></li>
-              <li><a class="dropdown-item" href="#">Postres</a></li>
+              <li><a class="dropdown-item" href="">Postres</a></li>
               <li><a class="dropdown-item" href="#">Tartas</a></li>
               <li><a class="dropdown-item" href="#">Alfajores</a></li>
               <li><a class="dropdown-item" href="#">Cupcakes</a></li>

@@ -243,4 +243,21 @@ public function modificaProducto($id){
         }
 }
 
+public function mostrarCatalogo($filtro){
+    $productoModel= new Producto_model();
+    $categoriaModel= new Categoria_model();
+    if($filtro == 0){
+        $data['productos']=$productoModel -> getProductoAll();
+    }else{
+        $data['productos']=$productoModel->where('categoria_id', $filtro)->findAll();
+    }
+    $data['categorias']=$categoriaModel -> getCategorias();
+
+    $dato['titulo']='Catálogo';
+    echo view ('front/head_view',$dato);
+    echo view ('front/nav_view');
+    echo view ('front/catalogo_produc', $data);
+    echo view ('front/footer_view');
+}
+
 }
