@@ -10,7 +10,8 @@ $routes->get('quienes_somos', 'Home::quienes_somos');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('contacto', 'Home::contacto');
 $routes->get('consultas', 'Home::consultas');
-$routes->get('catalogo_produc', 'Home::catalogo_produc');
+$routes->get('catalogo_produc(:any)', 'producto_controller::mostrarCatalogo/$1');
+
 $routes->get('terminosYusos', 'Home::terminosYusos');
 
 /**rutas del registro de usuario */
