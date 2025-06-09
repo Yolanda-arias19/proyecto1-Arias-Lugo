@@ -42,14 +42,19 @@
               Catálogo
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc');?>">Todos</a></li>
-              <li><a class="dropdown-item" href="#">Tortas</a></li>
-              <li><a class="dropdown-item" href="#">Postres</a></li>
-              <li><a class="dropdown-item" href="#">Tartas</a></li>
-              <li><a class="dropdown-item" href="#">Alfajores</a></li>
-              <li><a class="dropdown-item" href="#">Cupcakes</a></li>
-              <li><a class="dropdown-item" href="#">Galletas</a></li>
-              <li><a class="dropdown-item" href="#">Donas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'0');?>">Todos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'1'); ?>">Tortas de dos pisos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'2'); ?>">Tortas medianas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'3'); ?>">Tortas de kilos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'4'); ?>">Mini tortas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'5'); ?>">Tortas tamaño hamburguesa</a></
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'6');?>">Postres</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'7');?>">Tartas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'8');?>">Alfajores</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'9');?>">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'10');?>">Galletas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'11');?>">Donas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'12');?>">Mesa de dulces</a></li>
             </ul>
           </li>
           <!--Fin del menu desplegable categorias-->
@@ -92,14 +97,19 @@
               Catálogo
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc');?>">Todos</a></li>
-              <li><a class="dropdown-item" href="#">Tortas</a></li>
-              <li><a class="dropdown-item" href="#">Postres</a></li>
-              <li><a class="dropdown-item" href="#">Tartas</a></li>
-              <li><a class="dropdown-item" href="#">Alfajores</a></li>
-              <li><a class="dropdown-item" href="#">Cupcakes</a></li>
-              <li><a class="dropdown-item" href="#">Galletas</a></li>
-              <li><a class="dropdown-item" href="#">Donas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'0');?>">Todos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'1'); ?>">Tortas de dos pisos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'2'); ?>">Tortas medianas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'3'); ?>">Tortas de kilos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'4'); ?>">Mini tortas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'5'); ?>">Tortas tamaño hamburguesa</a></
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'6');?>">Postres</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'7');?>">Tartas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'8');?>">Alfajores</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'9');?>">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'10');?>">Galletas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'11');?>">Donas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'12');?>">Mesa de dulces</a></li>
             </ul>
           </li>
           <!--Fin del menu desplegable-->
@@ -128,13 +138,18 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'0');?>">Todos</a></li>
-              <li><a class="dropdown-item" href="#">Tortas</a></li>
-              <li><a class="dropdown-item" href="">Postres</a></li>
-              <li><a class="dropdown-item" href="#">Tartas</a></li>
-              <li><a class="dropdown-item" href="#">Alfajores</a></li>
-              <li><a class="dropdown-item" href="#">Cupcakes</a></li>
-              <li><a class="dropdown-item" href="#">Galletas</a></li>
-              <li><a class="dropdown-item" href="#">Donas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'1'); ?>">Tortas de dos pisos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'2'); ?>">Tortas medianas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'3'); ?>">Tortas de kilos</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'4'); ?>">Mini tortas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'5'); ?>">Tortas tamaño hamburguesa</a></
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'6');?>">Postres</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'7');?>">Tartas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'8');?>">Alfajores</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'9');?>">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'10');?>">Galletas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'11');?>">Donas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'12');?>">Mesa de dulces</a></li>
             </ul>
           </li>
           <!--Fin del menu desplegable-->
