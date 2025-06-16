@@ -41,3 +41,17 @@ $routes->get('marcarLeido(:num)', 'consulta_controller::marcarLeido/$1', ['filte
 $routes->get('abm_usuario(:any)', 'usuario_controller::mostrarABM/$1', ['filter' => 'admin']);
 $routes->get('bajaUsuario(:num)', 'usuario_controller::bajaUsuario/$1', ['filter' => 'admin']);
 $routes->get('activarUsuario(:num)', 'usuario_controller::activarUsuario/$1', ['filter' => 'admin']);
+
+$routes->post('carrito_agrega', 'carrito_controller::add', ['filter' => 'auth']);
+$routes->get('mostrar_carrito', 'carrito_controller::muestra',  ['filter' => 'auth']);
+$routes->get('carrito_suma/(:any)', 'carrito_controller::suma/$1', ['filter' => 'auth']);
+$routes->get('carrito_resta/(:any)', 'carrito_controller::resta/$1', ['filter' => 'auth']); 
+$routes->get('borrar', 'carrito_controller::borrar_carrito');
+$routes->get('actualiza_carrito', 'carrito_controller::actualiza_carrito');
+$routes->get('carrito_elimina/(:any)', 'carrito_controller::eliminar_item/$1');
+$routes->get('carrito-comprar', 'ventas_controller::registrar_venta');
+
+$routes->get('vista_compras(:num)', 'ventas_controller::ver_factura/$1', ['filter' => 'auth']);
+$routes->get('ventas', 'ventas_controller::ventas', ['filter' => 'admin']);
+$routes->get('ver_factura_usuario(:num)', 'ventas_controller::ver_facturas_usuario/$1', ['filter' => 'auth']);
+

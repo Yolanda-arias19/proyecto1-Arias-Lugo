@@ -49,7 +49,7 @@ class Usuario_controller extends Controller{
             'perfil_id' => 2,
         ]);
 
-        session()->setFlashdata('msg', 'Usuario registrado con existo');
+        session()->setFlashdata('success', 'Usuario registrado con exito');
         return redirect()->to('/login');
     }
 

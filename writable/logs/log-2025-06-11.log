@@ -7,6 +7,12 @@ DEBUG - 2025-06-11 18:16:07 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-06-11 18:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
+DEBUG - 2025-06-11 18:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 18:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 18:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 18:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
 DEBUG - 2025-06-11 18:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -24,6 +30,7 @@ DEBUG - 2025-06-11 18:33:30 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-06-11 18:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
 DEBUG - 2025-06-11 18:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 18:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -298,3 +305,6 @@ DEBUG - 2025-06-11 22:21:42 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-06-11 22:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 22:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-11 22:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+>>>>>>> 5d1a656bcc383a2b05d9925122526909993b77ba
+>>>>>>> 2ac9843edfa2fe6cbcba9dc4d8b9b87eebd3c73e

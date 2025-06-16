@@ -3,7 +3,9 @@
   <?php
   $session = session();
   $nombre = $session->get('nombre');
-  $perfil = $session->get('perfil_id'); ?>
+  $perfil = $session->get('perfil_id');
+  $id = $session->get('id_usuario');
+    ?>
 
 <!--Navegador-->
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -67,7 +69,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="<?php echo base_url('abm_usuario'.'todos'); ?>">CRUD usuarios</a></li>
               <li><a class="dropdown-item" href="<?php echo base_url('abm_producto'.'todos'); ?>">CRUD productos</a></li>
-              <li><a class="dropdown-item" href="#">Muestra ventas</a></li>
+              <li><a class="dropdown-item" href="<?php echo base_url('ventas'); ?>">Muestra ventas</a></li>
               <li><a class="dropdown-item" href="<?php echo base_url('mostrarMensajes'.'todos'); ?>">Consultas</a></li>
             </ul>
           </li>
@@ -113,6 +115,9 @@
             </ul>
           </li>
           <!--Fin del menu desplegable-->
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="<?php echo base_url('ver_factura_usuario'.$id);?>">Mis compras</a>
+          </li>
         </ul>
 
       <!--Si no es ninguno de los dos-->
@@ -159,7 +164,7 @@
     </div>
           <div class="icono_cart">
             <?php if($perfil !=1): ?>
-            <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+            <a href="<?php echo base_url('mostrar_carrito');?>"><ion-icon name="cart-outline"></ion-icon></a>
             <?php endif; ?>
           </div>
           <div class="d-flex">

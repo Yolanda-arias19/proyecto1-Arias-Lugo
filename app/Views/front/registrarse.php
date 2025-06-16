@@ -15,12 +15,12 @@
 <section class = "registro">
     <?php $validation = \Config\Services::validation(); ?>
 
-        <form method="post" class="needs-validation" novalidate action="<?php echo base_url('/enviar-form') ?>"> 	
+        <form method="post" class="needs-validation" action="<?php echo base_url('/enviar-form') ?>"> 	
                 <h2>Registrarse</h2>
 
                 <div class="form_input">
                     <label for="ID-Nombre-Registro" class="form-label">Nombre</label>
-                    <input name="nombre" id="ID-Nombre-Registro" type="text"  class="form-control" placeholder="Ingresa tu nombre" maxlength="30" minlength="3" required>
+                    <input name="nombre" id="ID-Nombre-Registro" type="text"  class="form-control" placeholder="Ingresa tu nombre" maxlength="30" minlength="3" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,30}$" required>
                     <!-- Error Del Lado del Cliente -->
                     <div id="ID-Nombre-Registro" class="invalid-feedback">
                         Inserte un nombre válido. El nombre debe tener entre 3 y 30 caracteres.
@@ -36,7 +36,7 @@
 
                 <div class="form_input">
                     <label for="ID-Apellido-Registro" class="form-label">Apellido</label>
-                    <input name="apellido" id="ID-Apellido-Registro" type="text" class="form-control" placeholder="Apellido" maxlength="30" minlength="3" required>
+                    <input name="apellido" id="ID-Apellido-Registro" type="text" class="form-control" placeholder="Apellido" maxlength="30" minlength="3" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,30}$" required>
                     <!-- Error Del Lado del Cliente -->
                     <div id="ID-Apellido-Registro" class="invalid-feedback">
                         Inserte un apellido válido. El apellido debe tener entre 3 y 30 caracteres.
