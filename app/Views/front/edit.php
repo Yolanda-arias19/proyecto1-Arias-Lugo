@@ -1,21 +1,24 @@
 <section class= "formulario_abm">
 
-        <!--validacion-->
-        <?php if(!empty(session()->getFlashdata('fail'))): ?>
-            <div class="alert alert-danger"><?=session()->getFlashdata('fail')?></div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <?php endif; ?>
-        <?php if(!empty(session()->getFlashdata('success'))): ?>
-            <div class="alert alert-success"><?=session()->getFlashdata('success')?></div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <?php endif; ?>
-
         <?php $validation = \Config\Services::validation(); ?>
 
         <!--inicio del formulario-->
         <form class="needs-validation" action="<?php echo base_url('modificarProducto'.$old['id']); ?>" method="post" enctype="multipart/form-data">
         
             <h2>Alta de productos</h2>
+            
+            <!--validacion-->
+            <?php if(!empty(session()->getFlashdata('fail'))): ?>
+                <div class="alert alert-danger alert-dismissible"><?=session()->getFlashdata('fail')?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
+            <?php if(!empty(session()->getFlashdata('success'))): ?>
+                <div class="alert alert-success alert-dismissible"><?=session()->getFlashdata('success')?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
+
                 <div class="mb-2">
                     <label for="nombre_prod" class="form-label">Producto</label>
                     <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" placeholder="Nombre del producto" autofocus required value="<?php echo $old['nombre_prod'];?>">

@@ -13,10 +13,7 @@
     <h2>Preguntas Frecuentes</h2>
     
 <!--Preguntas desplegables-->
-    <details>
-        <summary>¿Precio?</summary><!--Aca va la pregunta-->
-        <p>lor adjfsiffhuekodosoosoosos</p> <!--Aca va la respuesta-->
-    </details>
+
     <details>
         <summary>¿Para cuantas personas es cada una?</summary>
         <ul><li>Mini torta (1/2 personas aprox.)</li>
@@ -68,39 +65,48 @@
             </ul> 
     </details>
     <details>
-        <summary>¿seña?</summary>
+        <summary>¿Seña?</summary>
         <p></p>
     </details>
-   
+    
     <?php $validation = \Config\Services::validation(); ?>
     <form method="post" class="needs-validation" action="<?php echo base_url('enviar-form-consultas') ?>">
         <h2>Formulario de Consultas</h2>
         
         <div class= "paddingConsultas">
-        <div class="form-group ">
-            <label for="nombre">Nombre</label>
-                <input type="text" name ="nombre" placeholder="Nombre" id="nombre" required>
-        </div>
-
-        <!-- Error Del Lado del Servidor -->
-        <?php if($validation->getError('nombre')) {?>
-            <div class='alert alert-danger alert-dismissible mt-2'>
-                <?= $error = $validation->getError('nombre'); ?>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <?php if (session()->get('logged_in')):?>
+            <div class="form-group ">
+                    <input type="text" name="nombre" hidden value="<?= session()->get('nombre') . ' ' . session()->get('apellido') ?>" placeholder="Nombre" id="nombre">
             </div>
-        <?php }?>
+             <div class="form-group">
+                    <input type="email" name ="email" hidden value=<?= session()->get('email') ?> placeholder="ejemplo@gmail.com" id="email">
+            </div>
+        <?php else:?>
+           <div class="form-group ">
+                <label for="nombre">Nombre</label>
+                    <input type="text" name ="nombre" placeholder="Nombre" id="nombre"  required>
+            </div>
+             <!-- Error Del Lado del Servidor -->
+            <?php if($validation->getError('nombre')) {?>
+                <div class='alert alert-danger alert-dismissible mt-2'>
+                    <?= $error = $validation->getError('nombre'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php }?>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-                <input type="email" name ="email" placeholder="ejemplo@gmail.com" id="email" required>
-        </div>
-        <!-- Error Del Lado del Servidor -->
-                <?php if($validation->getError('email')) {?>
-                    <div class='alert alert-danger alert-dismissible mt-2'>
-                        <?= $error = $validation->getError('email'); ?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                <?php }?>
+            <div class="form-group">
+                <label for="email">Email</label>
+                    <input type="email" name ="email" placeholder="ejemplo@gmail.com" id="email" required>
+            </div>
+            <!-- Error Del Lado del Servidor -->
+            <?php if($validation->getError('email')) {?>
+                <div class='alert alert-danger alert-dismissible mt-2'>
+                    <?= $error = $validation->getError('email'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php }?>
+        <?php endif;?>
+       
 
         <div class="form-group">
             <label for="mensaje">Mensaje</label>

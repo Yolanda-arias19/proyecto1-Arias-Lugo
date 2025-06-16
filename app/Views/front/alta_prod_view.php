@@ -1,26 +1,34 @@
 <section class= "formulario_abm">
 
-        <!--validacion-->
-        <?php if(!empty(session()->getFlashdata('fail'))): ?>
-            <div class="alert alert-danger"><?=session()->getFlashdata('fail')?></div>
-        <?php endif; ?>
-        <?php if(!empty(session()->getFlashdata('success'))): ?>
-            <div class="alert alert-success"><?=session()->getFlashdata('success')?></div>
-        <?php endif; ?>
-
-        <?php $validation = \Config\Services::validation(); ?>
+        
 
         <!--inicio del formulario-->
         <form class="needs-validation" action="<?= base_url('enviar-prod'); ?>" method="post" enctype="multipart/form-data">
         
             <h2>Alta de productos</h2>
+                <!--validacion-->
+            <?php if(!empty(session()->getFlashdata('fail'))): ?>
+                <div class="alert alert-danger"><?=session()->getFlashdata('fail');?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+            </div>
+
+            <?php endif; ?>
+            <?php if(!empty(session()->getFlashdata('success'))): ?>
+                <div class="alert alert-success"><?=session()->getFlashdata('success')?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+            </div>
+            <?php endif; ?>
+
+            <?php $validation = \Config\Services::validation(); ?>
                 <div class="mb-2">
                     <label for="nombre_prod" class="form-label">Producto</label>
                     <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" placeholder="Nombre del producto" autofocus required>
                     
                     <!--Error-->
                     <?php if($validation->getError('nombre_prod')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('nombre_prod'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('nombre_prod'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
                         <?php endif; ?>
                 </div>
 
@@ -42,7 +50,8 @@
                         <?php endif ?>
                     <!--Error-->
                     <?php if($validation->getError('categoria')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('categoria'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('categoria'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button></div>
                         <?php endif; ?>
                 </div>
 
@@ -52,7 +61,9 @@
                     
                     <!--Error-->
                     <?php if($validation->getError('precio')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('precio'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('precio'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
                         <?php endif; ?>
                 </div>
 
@@ -62,7 +73,9 @@
                     
                     <!--Error-->
                     <?php if($validation->getError('precio_vta')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('precio_vta'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('precio_vta'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
                         <?php endif; ?>
                 </div>
 
@@ -72,7 +85,9 @@
                     
                     <!--Error-->
                     <?php if($validation->getError('stock')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('stock'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('stock'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
                         <?php endif; ?>
                 </div>
 
@@ -82,7 +97,9 @@
                     
                     <!--Error-->
                     <?php if($validation->getError('stock_min')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('stock_min'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('stock_min'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
                         <?php endif; ?>
                 </div>
 
@@ -92,7 +109,9 @@
                     
                     <!--Error-->
                     <?php if($validation->getError('imagen')): ?>
-                        <div class="alert alert-danger mt-2"><?= $validation->getError('imagen'); ?></div>
+                        <div class="alert alert-danger mt-2"><?= $validation->getError('imagen'); ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
                         <?php endif; ?>
                 </div>
                 
