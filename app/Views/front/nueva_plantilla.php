@@ -1,11 +1,8 @@
 
 <body>
-  <?php if(!empty (session()->getFlashdata('msg'))):?>
-        <div class="alert alert-success alert-dismissible"><?=session()->getFlashdata('msg');?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    <?php endif?>
+  
     <section class ="carousel">
+    
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active c-item">
@@ -20,7 +17,11 @@
   </div>
   </div>
 </section>
-
+<?php if(!empty (session()->getFlashdata('msg'))):?>
+        <div class="alert alert-success alert-dismissible"><?=session()->getFlashdata('msg');?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif?>
 
 <section class ="introduccion">
     <h1> Valen & Vir </h1>

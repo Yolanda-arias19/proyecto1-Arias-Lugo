@@ -35,32 +35,6 @@
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="<?php echo base_url('comercializacion');?>">Comercialización</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="<?php echo base_url('consultas');?>">Consultas</a>
-          </li>
-          <!--Menu desplegable categorias-->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Catálogo
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'0');?>">Todos</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'1'); ?>">Tortas de dos pisos</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'2'); ?>">Tortas medianas</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'3'); ?>">Tortas de kilos</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'4'); ?>">Mini tortas</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'5'); ?>">Tortas tamaño hamburguesa</a></
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'6');?>">Postres</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'7');?>">Tartas</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'8');?>">Alfajores</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'9');?>">Cupcakes</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'10');?>">Galletas</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'11');?>">Donas</a></li>
-              <li><a class="dropdown-item" href="<?php echo base_url('catalogo_produc'.'12');?>">Mesa de dulces</a></li>
-            </ul>
-          </li>
-          <!--Fin del menu desplegable categorias-->
-
           <!--Menu desplegable de operaciones del admin-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
